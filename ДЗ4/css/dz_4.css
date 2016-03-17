@@ -1,6 +1,13 @@
 body {
-    background-image: url(..//img/fon.jpg);
+    margin-top: -38px;
+    background: #0c739f;
 }
+
+.back {
+    background: url(../img/fon.jpg) no-repeat;
+    background-repeat: repeat-x;
+}
+
 
 .wrapper {
     background-color: white;
@@ -28,7 +35,7 @@ body {
     margin-right: 30px;
     margin-top: 40px;
     font-size: 15px;
-    font-family: "Tahoma";
+    font-family: Tahoma, Arial, sans-serif;
     color: rgba(18, 138, 167, 0.8);
     line-height: 1.2;
 }
@@ -47,10 +54,19 @@ body {
 
 .countries li {
     float: left;
-    padding: 0px 10px;
+    padding: 0px 8px;
     text-align: center;
     font-size: 10px;
-    font-family: "Tahoma";
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+
+.countries li:nth-child(5) {
+    padding-left: 5px;   
+}
+
+.countries li:nth-child(6) {
+    padding-left: 1px;   
 }
 
 .countries a {
@@ -84,6 +100,7 @@ body {
     margin: 0 5px;
 }
 
+
 .top_menu:after{
     content: '';
     clear: both;
@@ -95,7 +112,7 @@ body {
 .menu li {
     position: relative;
     float: left;
-    font-family: "Tahoma";
+    font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
     width: 130px;
@@ -105,6 +122,9 @@ body {
     text-align: center;
 }
 
+.usluga a {
+    padding-left: 20px;
+}
 
 .o_nas {
     text-align: center;
@@ -137,7 +157,7 @@ body {
 
 .container { 
     overflow: hidden;
-    font-family: "Tahoma";
+    font-family: Tahoma, Arial, sans-serif;
     font-size: 14px;
     color: rgb(66, 76, 67);
     line-height: 25px;
@@ -155,7 +175,7 @@ body {
 .sidebar {
     background-color: #edeef0;
     float: left;
-    width: 20%;
+    width: 18%;
     padding: 0 15px;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
@@ -171,7 +191,7 @@ body {
 .pravoe {
     float: right;
     background-color: #edeef0;
-    width: 20%;
+    width: 18%;
     padding: 0 15px;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
@@ -184,7 +204,7 @@ body {
 }
 
 footer {
-    font-family: "Tahoma"
+    font-family: Tahoma, Arial, sans-serif;
     font-size: 12px;
     color: white;
     text-align: center;
