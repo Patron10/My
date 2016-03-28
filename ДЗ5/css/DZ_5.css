@@ -87,7 +87,7 @@ body {
 .tab {
     display: table;
     margin: 0 auto;
-    padding: 27%;
+    padding: 27% 0 27% 0;
 }
 
 .block { 
