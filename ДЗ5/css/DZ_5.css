@@ -84,15 +84,17 @@ body {
 }
 
 /* CONTENT */
-.tab {
-    display: table;
-    margin: 0 auto;
-    padding: 27% 0 27% 0;
-}
 
 .block { 
-    display: table-cell;
+    position: absolute;
+    height: 613px;
     width: 560px;
+    padding-top: 36px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .block1 {
