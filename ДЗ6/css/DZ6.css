@@ -320,18 +320,61 @@ nav li {
     width: 20%;
 }
 
+.captio {
+    width: 148px;
+    height: 26px;
+    border: 1px solid #79878d;
+    border-radius: 20px;
+    margin-left: 2px;
+    padding-left: 1px;
+}
+
+.captio img  {
+    float: left;
+    padding-right: 3px;
+    padding-top: 1px;
+}
+
+.captio span {
+    height: 26px;
+    line-height: 26px;
+    font-size: 15px;
+    font-family: 'lucida Sans Unicode Regular', sans-serif;
+    color: rgb(17, 65, 101);
+    text-transform: uppercase;
+}
+
+.captio ul {
+    width: 179px;
+}
+
+.captio li:first-child {
+    margin-top: 5px;
+}
+
+.captio li {
+    margin-left: 46px;
+    margin-bottom: 6px;
+    font-family: 'lucida Sans Unicode Regular', sans-serif;
+    color: rgb(17, 65, 101);
+    font-size: 12.73px;
+}
+
+.captio li a {
+    text-decoration: none;
+    color: rgb(17, 65, 101);
+}
+
 .two {
     margin-bottom: 85px;
 }
 
 .two ul li {
-    list-style-image: url(../img/checkbox.png);
-    margin-left: 23px;
+    margin-left: 2px;
 }
 
-.two ul li:hover {
-    list-style-image: url(../img/checkbox.png);
-    max-height: 13px;
+.chek {
+    margin-right: 15px;
 }
 
 button {
@@ -459,6 +502,7 @@ footer {
 }
 
 .spisok_footer {
+    padding-top: 12px;
     width: 100%;
     margin: 0 auto;
 }
@@ -470,14 +514,13 @@ footer ul {
 footer li {
     display: inline-block;
     color: white;
-    margin-right: 9px;
-    padding-top: 12px;
+    padding: 0px 12px;
     font-size: 12px;
     font-family: 'Arial', sans-serif;
 }
 
-footer li:last-child {
-    margin-left: 0px;
+footer li:first-child {
+    border: none;
 }
 
 footer li:hover {
@@ -485,17 +528,11 @@ footer li:hover {
     cursor: pointer;
 }
 
-footer li:hover:nth-child(2) {
-    color: white;
-    cursor: auto;
+footer li {
+    border-left: 1px solid white;
 }
 
-footer li:hover:nth-child(4) {
-    color: white;
-    cursor: auto;
-}
-
-footer li:hover:nth-child(6) {
+footer li:hover: {
     color: white;
     cursor: auto;
 }
