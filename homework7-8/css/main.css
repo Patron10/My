@@ -625,6 +625,18 @@ footer {
         display: none;
     }
     
+    .slider {
+        display: none;
+    }
+    
+    .haha {
+        display: none;
+    }
+    
+    .block {
+        width: 480px;
+    }
+    
     .child {
         display: block;
         clear: both;
