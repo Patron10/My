@@ -1,0 +1,727 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic,cyrillic-ext,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+@font-face {
+    font-family: 'LeagueGothic Regular';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.child {
+    display: none;
+}
+
+header {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 846px;
+}
+
+.block {
+    max-width: 958px;
+    margin: 0 auto;
+    height: 112px;
+}
+
+.logo {
+    float: left;
+    width: 16%;
+    padding-top: 70px;
+}
+
+.navigation {
+    float: right;
+    width: 84%;
+    padding-top: 76px;
+}
+
+.navigation ul {
+    float: right;
+}
+
+.navigation li {
+    font-family: 'LeagueGothic Regular', 'Tahoma', 'Arial', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    display: inline-block;
+    color: white;
+    padding-right: 45px;
+}
+
+.navigation li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.line {
+    display: none;
+    margin-top: 2px;
+    margin-right: -50px;
+    margin-left: -6px;
+    height: 2px;
+    width: 48px;
+    background-color: #edbfff;   
+}
+.two {
+    width: 55px;
+}
+
+.three {
+    width: 44px;
+}
+
+.four {
+    width: 79px;
+}
+
+.five {
+    width: 98px;
+}
+
+.six {
+    width: 117px;
+}
+
+.navigation li a:hover .line {
+     display: block;   
+}
+
+.navigation li:last-child {
+    padding-right: 0;
+}
+
+.slider {
+    clear: both;
+    height: 400px;
+    width: 100%;
+    margin-top: 168px;
+    background-image: url(../img/ten.png);
+}
+
+.content_slider {
+    height: 400px;
+    max-width: 958px;
+    margin: 0 auto;
+}
+
+.text_slider {
+    float: left;
+    display: table;
+    width: 55%;
+}
+
+.Lorem {
+    display: table-cell;
+    vertical-align: middle;
+    width: 519px;
+    height: 400px;
+}
+
+.text {
+    font-family: 'LeagueGothic Regular', 'Tahoma', 'Arial', sans-serif;
+    font-size: 60px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.podzagolovok {
+    font-size: 32px;
+    color: #edbfff;
+    margin-bottom: 8px;
+}
+
+.text1 {
+    font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.iphone {
+    width: 0%;
+    height: 434px;
+    float: right;
+    margin-right: 73px;
+    margin-top: -15px;
+}
+
+.iphone img {
+    float: right;
+}
+
+.knopka {
+    clear: both;
+    float: right;
+    margin-right: 164px;
+    margin-top: 70px;
+}
+
+.about {
+    border-top: 1px solid #33253a;
+    border-bottom: 1px solid #0d151b;
+    width: 100%;
+    height: 339px;
+    background-image: url(../img/about.jpg);
+}
+
+.about_container {
+    display: table;
+    max-width: 958px;
+    margin: 0 auto;
+    height: 339px;
+}
+
+.wrapper_container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about a {
+    pointer-events: none;
+    cursor: default;
+}
+.li {
+    display: inline-block;
+    width: 30%;
+    margin-right: 4%
+}
+
+.li:last-child {
+    margin-right: 0px;
+}
+
+.company {
+    width: 100%;
+    float: left;
+}
+
+.com {
+    padding-left: 55px;
+}
+
+.li .icon {
+    display: block;
+    width: 29px;
+    height: 25px;
+    background: url(../img/sprait.png) left center no-repeat;
+    float: left;
+    margin-top: 9px;
+}
+
+.li .message {
+    background-position: -31px -3px;
+}
+
+.li .music {
+    background-position: -61px -4px;
+}
+
+.caption {
+    font-family: 'LeagueGothic Regular', 'Tahoma', 'Arial', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.text2 {
+    font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-top: 10px;
+}
+
+.read {
+    float: right;
+    margin-top: 15px;
+    font-size: 18px;
+    font-family: 'LeagueGothic Regular', 'Tahoma', 'Arial', sans-serif;
+    color: white;
+}
+
+.more {
+    text-decoration: none;
+    color: white;
+}
+
+.read:hover {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+.wrapper_content {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.content {
+    height: 486px;
+    max-width: 958px;
+    margin: 0 auto;
+}
+
+.article {
+    position: relative;
+    margin-top: 99px;
+    margin-left: 29px;
+    height: 272px;
+    width: 45%;
+    background-color: white;
+    float: left;
+    box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.2);
+}
+
+.article:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid white;
+    border-left: 19px solid transparent;
+    border-right: 0px solid transparent;
+    bottom: -20px;
+    right: 40px;
+}
+
+.soderganie {
+    padding: 0px 35px 0 35px;
+    margin-top: -15px;
+}
+
+.chel {
+    display: block;
+    width: 49px;
+    height: 49px;
+    background: url(../img/chel.png) left center no-repeat;
+    float: left;
+    margin-left: -64px;
+    margin-top: -10px;
+}
+
+.pingbuller {
+    margin-top: 44px;
+    font-family: 'LeagueGothic Regular', 'Tahoma', 'Arial', sans-serif;
+    font-size: 30px;
+    color: #454545;
+}
+
+.here {
+    color: #edbfff;
+}
+
+.black {
+    color: black;
+    line-height: 24px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.wrapper_recent {
+    float: right;
+    height: 486px;
+    width: 46%;
+    display: table;
+}
+
+.recent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.updates {
+    margin-bottom: 17px;
+}
+
+.spisok_svetofor a {
+    pointer-events: none;
+    cursor: default;
+}
+
+.spisok_svetofor li {
+    margin-bottom: 33px;
+}
+
+.spisok_svetofor li .svetofor {
+    margin-right: 17px;
+    margin-top: -3px;
+    display: block;
+    background: url(../img/svetofor.png) left no-repeat;
+    background-position: 0px 0px;
+    width: 49px;
+    height: 49px;
+    float: left;
+}
+
+.spisok_svetofor li .se {
+    background-position: 0px -51px;
+}
+
+.spisok_svetofor li .th {
+    background-position: 0px -102px;
+}
+
+.nunc {
+    font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.posted {
+    font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.read_more {
+    text-decoration: none;
+    float: right;
+    font-family: 'LeagueGothic Regular', 'Tahoma', 'Arial', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+.krugki1 {
+    padding: 58px 40% 0px 40%;
+}
+
+.logotip {
+    display: table;
+    border-top: 1px; solid white;
+    border-bottom: 1px solid white;
+    height: 118px;
+    width: 100%;
+    background: #f9f9f9;
+}
+
+.logotips {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logotips img {
+    width: 768px;
+}
+
+.wrapper_news {
+    height: 398px;
+    background-color: #ececec;
+}
+
+.news {
+    display: table;
+    width: 958px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.news_spisok {
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.news li {
+    float: left;
+    width: 283px;
+    margin-right: 54px;
+    font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+    font-size: 16px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 1.004);
+}
+
+.news li:last-child {
+    margin-right: 0;
+}
+
+.pigbull {
+    font-family: 'LeagueGothic Regular', 'Tahoma', 'Arial', sans-serif;
+    font-size: 48px;
+    color: #454545;
+    margin-bottom: 14px;
+}
+
+.er {
+    color: #b9b9b9;
+}
+
+.copyright {
+    font-family: 'Georgia', 'Tahoma', 'Arial', sans-serif;
+    font-size: 16px;
+    color: rgb(197, 197, 197);
+    font-style: italic;
+    margin-bottom: 11px;
+}
+
+.recent1 {
+    font-family: 'LeagueGothic Regular', 'Tahoma', 'Arial', sans-serif;
+    font-size: 30px;
+    color: #454545;
+    margin-bottom: 9px;
+}
+
+.nunc1 {
+    line-height: 1.5;
+    color: #787878;
+}
+
+footer {
+    width: 100%;
+    height: 114px;
+    background-image: url(../img/bg_footer.png);
+}
+
+.block_footer {
+    height: 100%;
+    width: 958px;
+    margin: 0 auto;
+}
+
+.footer {
+    line-height: 114px;
+    float: left;
+    padding: 0;
+    width: 65%;
+}
+
+.line1 {
+    height: 2px;
+}
+
+.designed {
+    float: right;
+    line-height: 114px;
+    font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.as {
+    font-weight: 800;
+}
+
+.non {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    
+    .child {
+        display: none;
+    }
+    
+    .non {
+    display: block;
+}
+    
+    header {
+        height: 798px;
+}
+    .navigation ul {
+        float: left;
+}
+    
+    .navigation {
+        width: 100%;
+        padding-top: 35px;
+}
+    .slider {
+        margin-top: 135px;
+}
+    
+    .content_slider {
+        width: 768px;
+}
+    
+    .none {
+        display: none;
+    }
+    
+    .text_slider {
+        width: 279px;
+    }
+    
+    .podzagolovok {
+        font-size: 24px;
+    }
+    
+    .zagolovok {
+        font-size: 48px;
+        margin-bottom: 5px;
+    }
+    
+    .text1 {
+        font-size: 16px;
+    }
+    
+    .iphone {
+        margin-top: -20px;
+        background-image: url(../img/iPhone1.png);
+    }
+    
+    .about_container {
+        width: 768px;
+    }
+    
+    .caption {
+        font-size: 24px;
+    }
+    
+    .article {
+        width: 313px;
+    }
+    
+    .soderganie {
+        padding-right: 27px;
+    }
+    
+    .krugki1 {
+        padding:  85px 36.5% 0px 36.5%;    
+    }
+    
+    .news {
+        width: 768px;
+    }
+    
+    .news li {
+        width: 29%;
+        margin-right: 49px;
+    }
+    
+    footer {
+        background-image: url(../img/footer1.jpg);
+        height: 201px;
+        width: 768px;
+    }
+    
+    .block_footer {
+        width: 768px;
+    }
+    
+    .footer {
+        padding-top: 0;
+        width: 71%;
+        padding-right: 0;
+    }
+    
+    .navigation li {
+        padding-right: 29px;
+    }
+    
+    .designed {
+        line-height: 201px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    .navigation {
+        display: none;
+    }
+    
+    .child {
+        display: block;
+        clear: both;
+        padding-top: 19px;
+        float: none;
+        width: 244px;
+        margin: 0 25%;
+    }
+    
+    .logo {
+        text-align: center;
+        width: 480px;
+        margin: 0 auto;
+}
+    
+    .child li {
+        padding-right: 0;
+    }
+    
+    .block {
+        max-width: 480px;
+        height: 203px;
+    }
+    
+    .child ul {
+        float: none;
+    }
+    
+    .child li {
+        height: 45px;
+        line-height: 45px;
+        display: block;
+        text-align: center;
+        background: #483b4e;
+        border-top: 1px solid #513d58;
+        border-bottom: 1px solid #35273d;
+    }
+    
+    .child ul ul {
+        display: none;
+        padding-top: 4px;
+    }
+    
+    .child ul li:hover > ul {
+        display: block;
+        position: absolute;
+        width: 244px;
+    }
+    
+    .fir {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-radius: 5px;
+    }
+    
+    .fir:hover {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .child ul ul li:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .child ul ul li:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .wi {
+        display: block;
+        width: 244px;
+    }
+    
+    .wi:hover {
+        background-color: #332937;
+    }
+    
+    
+    .line {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -6px;
+    }
+    
+    .chis {
+        margin-top: 0px;
+    }
+
+    .first {
+        width: 48px;
+        margin-left: 98px;
+        display: block;
+    }
+    
+    .slider {
+        margin-top: 0;
+    }
+}
