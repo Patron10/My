@@ -391,7 +391,7 @@ button {
     margin-left: 10px;
 }
 
-content {
+.content {
     float: left;
     padding-top: 17px;
     width: 60%;
@@ -435,7 +435,7 @@ content {
     vertical-align: middle;
 }
 
-content li {
+.content li {
     display: inline-block;
     width: 142px;
     height: 174px;
@@ -447,7 +447,7 @@ content li {
     margin-bottom: 0;
 }
 
-.obnulit {
+#obnulit {
     height: 0px;
 }
 
