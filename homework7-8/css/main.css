@@ -1001,5 +1001,91 @@ footer {
         line-height: 100px;
         float: none;
         text-align: center;
-        
     }
+}
+@media (max-width: 320px) {
+    header {
+        width: 320px; 
+        height: 516px;
+    }
+    
+    .block {
+        max-width: 320px;
+    }
+    
+    .logo {
+        width: 320px;
+    }
+    
+    .child {
+        margin: 0 auto;
+    }
+    
+    .slider {
+        max-width: 320px;
+        background-image: none;
+    }
+    
+    .content_slider {
+        max-width: 320px;
+    }
+    
+    .none7 {
+        display: none;
+    }
+    
+    .none {
+        display: none;
+    }
+    
+    .text_slider {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about_container {
+        max-width: 320px; 
+    }
+    
+    .none_about {
+        display: none;
+    }
+    
+    .article {
+        width: 91%;
+    }
+    
+    .content {
+        max-width: 320px;
+    }
+    
+    .wrapper_recent {
+        max-width: 320px;
+    }
+    
+    .logotip {
+        width: 320px;
+    }
+    
+    .logotips ul {
+        width: 320px;
+    }
+    
+    .news {
+        width: 320px;
+    }
+    
+    footer {
+        width: 320px;
+    }
+    
+    .block_footer {
+        width: 320px;
+    }
+    
+    .footer {
+        display: none;
+    }
+    }
+    
+    
