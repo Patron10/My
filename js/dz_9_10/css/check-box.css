@@ -1,0 +1,26 @@
+#test-check1 {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.test-check1 {
+    cursor: pointer;
+}
+.test-check1:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-2.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+#test-check1:checked + label:after {
+background-position: 0 -17px;
+}
+.test-check1:hover:after {
+background-position: 0 -34px;
+}
+#test-check1:checked + label:hover:after {
+background-position: 0 -51px;
+}
