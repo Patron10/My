@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+  <script type="text/html" id="test">
+      <% for (var i = 0; i < data.length; i++) { %> 
+      <div class="wrapper">
+       <div class="i_am">
+           <div class="name"><%= data[i].name %></div>
+           <img src="img/1.jpg" alt="I" width="225px" height="300px">
+           </div>
+           <div class="about_me">
+           <p><%= data[i].study %></p>
+           <hr>
+           <p><%= data[i].because %></p>
+           <ul>
+               <li><%= data[i].one %></li>
+               <li><%= data[i].two %></li>
+           </ul>
+           <hr>
+           <p><%= data[i].namber %>
+               <br>
+               <%= data[i].chisla %>
+           </p>
+           <p><%= data[i].profil %>
+               <br>
+               <%= data[i].vk %><a href="https://vk.com/petruk_andriy" target="_blank"></a>
+           </p>
+           <hr>
+           <p class="feedback"><%= data[i].feedbeck %>
+               <br>
+               <%= data[i].want %>
+           </p>
+           </div>
+      </div>
+     <% }; %>
+  </script>
+</body>
+</html>

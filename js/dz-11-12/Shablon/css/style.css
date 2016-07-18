@@ -1,0 +1,16 @@
+* {
+    list-style-type: none;
+}
+
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.feedback {
+    margin-bottom: 0px;
+}
