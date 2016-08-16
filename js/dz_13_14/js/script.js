@@ -1,0 +1,75 @@
+$(function() {
+    var $test = {
+        header: 'Тест по программированию',
+        questions: [{
+            title: 'Вопрос №1',
+            radioname: 'one',
+            id: ['1','2','3'],
+            answers:['Вариант ответа №1','Вариант ответа №2','Вариант ответа №3'],
+            correct: 3
+            },
+            {
+            title: 'Вопрос №2',
+            radioname: 'two',
+            id: ['1','2','3'],
+            answers:['Вариант ответа №1','Вариант ответа №2','Вариант ответа №3'],
+            correct: 3
+            },
+            {
+            title: 'Вопрос №3',
+            radioname: 'three',
+            id: ['1','2','3'],
+            answers:['Вариант ответа №1','Вариант ответа №2','Вариант ответа №3'],
+            correct: 3
+        }],
+        submit: 'Проверить'
+    };
+    
+    localStorage.setItem('voprosOtvet', JSON.stringify($test));
+
+    var $data = JSON.parse(localStorage.getItem('voprosOtvet'));
+
+    var $html = $('#test').html();
+    var $content = tmpl($html, $data);
+    $('.wrapper').append($content);
+    
+        function showModal(e) {
+        e.preventDefault();
+
+        var $modal = $('<div class="modal"></div>');
+        var $result = 0;
+        var $answer = $('input:checked');
+        var $correct = [];
+
+        for (var i = 0; i<$data.questions.length; i++) {
+                $correct[i] = $data.questions[i].correct;
+            if ($($answer[i]).attr('id') == $correct[i]) {
+                $result += 1;
+                $modal.append('<p class="correct">Ответ на ' + (i+1) + ' вопрос <b>верный</b></p>');
+            } else {
+                $modal.append('<p class="incorrect">Ответ на ' + (i+1) + ' вопрос <b>неверный</b></p>');
+            }
+        }
+
+        $modal.append('<h4 class="result">Правильных ответов: ' + $result + '</h4>');
+
+        if ($result == $data.questions.length) {
+            $modal.append('<h4>Тест пройден</h4>');
+        } else {
+            $modal.append('<h4>Tест не пройден</h4>');
+        }
+
+        $modal.append('<button>Закрыть и начать заново</button>');
+        $('body').append($modal);
+
+        $('button').one('click', function (e) {
+            e.preventDefault();
+            $modal.detach();
+            $('input').attr('checked', false);
+        })
+    }
+
+    $('button').on('click', showModal);
+
+    return this;
+});
