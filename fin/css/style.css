@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 320px;
+    background: url(../img/mobile-head-fon.png);
+}
+
+.header {
+    height: 540px;
+}
+
+.login {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.login li {
+    font-family: "Montserrat Bold", sans-serif;
+    display: inline-block;
+    width: 90px;
+    height: 36px;
+    line-height: 36px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+#border {
+    border: none;
+}
+
+.login a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+#block {
+    display: block;
+}
+
