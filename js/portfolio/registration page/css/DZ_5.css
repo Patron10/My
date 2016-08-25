@@ -1,0 +1,233 @@
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* HEADER */
+
+.wrapper{
+    background-image: url(../img/fon.png);
+    height: 36px;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.menu1 {
+    float: right;
+    margin-right: 14px;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: rgb(96, 181, 237);
+}
+
+.menu1 li:hover {
+    background-color: #4eabda;
+    color: white;
+    cursor: pointer;
+}
+
+.menu2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    float: right;
+    margin-right: 20px;
+    color: white;
+}
+
+.menu2 li:hover {
+    cursor: pointer;
+}
+
+.Ola {
+    background-image: -webkit-linear-gradient(top, #67c6e6 0%, #3686CA 100%);
+}
+
+.flag {
+    position: relative;  
+}
+
+.flag1 {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -28px;
+}
+
+.line1 {
+    float: right;
+    margin-right: 35px;
+    margin-top: 2px;
+}
+
+.header li{
+    display: inline-block;
+    line-height: 36px;
+    padding: 0 13px;
+}
+
+.effect {
+    text-decoration: underline;
+}
+
+/* CONTENT */
+
+.block { 
+    position: absolute;
+    height: 613px;
+    width: 560px;
+    padding-top: 36px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.block1 {
+    line-height: 62px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: rgba(0,0,0,0.65);
+    margin-bottom: 2px;
+}
+
+.block2 {
+    height: 549px;
+    background: rgba(0,0,0,0.65);
+}
+
+.facebook {
+    margin-bottom: 59px;
+    width: 500px;
+}
+
+.facebook:hover {
+    cursor: pointer;
+}
+
+.face {
+    position: relative;
+    float: left;
+    width: 37px;
+    height: 34px;
+    background-image: -webkit-linear-gradient(top, #3d5698 0%, #334166 100%);
+    border-right: 1px solid #243b6f;
+    border-top: 1px solid #7a88b5;
+    border-top-left-radius: 4px; 
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    line-height: 42px;
+}
+        
+        
+.log {
+    float: left;
+    background-image: -webkit-linear-gradient(top, #3d5698 0%, #334166 100%);
+    width: 237px;
+    height: 34px;
+    border-left: 1px solid #7a88b5;
+    border-top: 1px solid #7a88b5;
+    border-top-right-radius: 4px; 
+    border-bottom-right-radius: 4px;
+    color: white;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+        
+.log:after {
+    content: url(../img/strelka.png);
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.forma {
+    width: 276px;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+
+
+.OU {
+    margin-bottom: 21px;
+}
+
+.text_ou {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    margin-top: -11px;
+    margin-left: 2px;
+}
+
+.zapolnenie {
+    padding-left: 19px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    width: 257px;
+    margin: 8px 0px;
+    background-color: #0f0f0f;
+    line-height: 35px;
+    border: none;
+    border-bottom: 1px solid #484948;
+}
+
+.kvadrat {
+    margin-top: 14px;
+}
+
+.zapolnenie:focus {
+    background: #1b5288;
+    box-shadow: 0 0 10px 3px rgba(67, 116, 146, 1);
+}
+
+.checkbox {
+    color: rgb(204, 204, 204);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.knopka {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.knopka1 {
+    height: 35px;
+    background-image: -webkit-linear-gradient(top, #67c6e6 0%, #3686CA 100%);
+    border: 0;
+    color: white;
+    box-shadow: 0px 0px 2px 0px rgba(136, 181, 226, 0.72);
+}
+
+.knopka1:hover {
+    cursor: pointer;
+}
+
+.footer {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    color: rgb(204, 204, 204);
+    text-align: center;
+    margin: 0 -19px;
+}
+
