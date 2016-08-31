@@ -44,7 +44,7 @@
     line-height: 32px;
     border: 2px solid white;
     border-radius: 20px;
-    behavior: url(PIE.htc);
+    behavior: url(css/PIE.htc);
 }
 
 #border {
@@ -89,7 +89,7 @@
     line-height: 40px;
     background-color: #ff4e50;
     border-radius: 20px;
-    behavior: url(PIE.htc);
+    behavior: url(css/PIE.htc);
 }
 
 .find a {
@@ -284,7 +284,7 @@ p.name {
     border-radius: 5px;
     padding-left: 15px;
     margin-bottom: 15px;
-    behavior: url(PIE.htc);
+    behavior: url(css/PIE.htc);
 }
 
 .search__btn {
@@ -297,7 +297,7 @@ p.name {
     color: #fff;
     background-color: #ff4e50;
     border-radius: 20px;
-    behavior: url(PIE.htc);
+    behavior: url(css/PIE.htc);
 }
 
 .footer {
