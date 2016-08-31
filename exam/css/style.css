@@ -36,13 +36,15 @@
 }
 
 .login li {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     width: 90px;
     height: 36px;
-    line-height: 36px;
+    line-height: 32px;
     border: 2px solid white;
     border-radius: 20px;
+    behavior: url(PIE.htc);
 }
 
 #border {
@@ -80,12 +82,14 @@
 }
 
 .find {
+    position: relative;
     width: 225px;
     margin: 0 auto;
     height: 40px;
     line-height: 40px;
     background-color: #ff4e50;
     border-radius: 20px;
+    behavior: url(PIE.htc);
 }
 
 .find a {
@@ -98,6 +102,7 @@
 .content {
     width: 940px;
     margin: 0 auto;
+    margin-bottom: 287px;
 }
 
 .works {
@@ -270,6 +275,7 @@ p.name {
 }
 
 .search__input {
+    position: relative;
     line-height: 39px;
     height: 39px;
     width: 220px;
@@ -277,17 +283,21 @@ p.name {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding-left: 15px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+    behavior: url(PIE.htc);
 }
 
 .search__btn {
+    position: relative;
     width: 160px;
     height: 40px;
     border: none;
-    font: 14px "montserrat-bold", sans-serif;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 14px;
     color: #fff;
     background-color: #ff4e50;
     border-radius: 20px;
+    behavior: url(PIE.htc);
 }
 
 .footer {
