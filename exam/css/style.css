@@ -216,6 +216,8 @@ p.name {
 .item img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 .item:nth-child(3) {
@@ -238,23 +240,19 @@ p.name {
     font-family: 'Montserrat', 'Arial', sans-serif;
     color: white;
     font-size: 22px;
-    margin-left: 25px;
+    text-align: center;
     z-index: 1;
     margin-top: -180px;
-    position: absolute;
 }
 
 .texts {
     font-family: 'Montserrat', 'Arial', sans-serif;
     color: white;
     font-size: 22px;
-    margin-left: 60px;
+    text-align: center;
     z-index: 1;
     margin-top: -180px;
-    position: absolute;
 }
-
-
 
 .search {
     margin-bottom: 282px;
