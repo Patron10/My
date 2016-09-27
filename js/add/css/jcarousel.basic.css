@@ -1,0 +1,321 @@
+@font-face {
+    font-family: "PFSquareSansProRegular";
+    src: url("../fonts/pfsquaresanspro-regular-webfont.eot");
+    src: url("../fonts/pfsquaresanspro-regular-webfont.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/pfsquaresanspro-regular-webfont.woff") format("woff"),
+    url("../fonts/pfsquaresanspro-regular.ttf") format("truetype");
+    font-style: bold;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PFSquareSansProBold";
+    src: url("../fonts/pfsquaresanspro-bold-webfont.eot");
+    src: url("../fonts/pfsquaresanspro-bold-webfont.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/pfsquaresanspro-bold-webfont.woff") format("woff"),
+    url("../fonts/pfsquaresanspro-bold.ttf") format("truetype");
+    font-style: bold;
+    font-weight: bold;
+}
+
+.jcarousel-wrapper {
+    margin: 100px auto;
+    position: relative;
+    width: 970px;
+    height: 908px;
+    background: url(../img/slider-fon-bottom.png) no-repeat;
+    background-position: bottom;
+}
+
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    padding-top: 45px;
+    height: 863px;
+    border-bottom: 3px solid #2468b1;
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+    height: 970px;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+}
+
+.jcarousel-control-prev {
+    margin-top: 85px;
+    left: -50px;
+    margin-left: 50px;
+}
+
+.jcarousel-control-next {
+    margin-top: 85px;
+    right: 52px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    top: 0;
+    margin-top: -80px;
+    margin-left: 252px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    width: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    height: 28px;
+    font-family: "PFSquareSansProRegular";
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 3px;
+    text-align: center;
+    
+    margin-right: 15px;
+    
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: white;
+    color: #2e79ca;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.verh {
+    top: 0;
+    margin-top: -72px;
+    margin-left: 255px;
+}
+
+.lft {
+    margin-left: 0;
+    margin-right: 160px;
+}
+
+.jcarusel-option li {
+    display: inline-block;
+    list-style: none;
+}
+
+.wrapper-slider-option {
+    display: inline-block;
+    width: 254px;
+    height: 61px;
+    border-radius: 10px;
+    border-bottom: 3px solid #acabb4;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper-slider-option {
+    margin-right: 67px;
+    margin-top: -34px;
+}
+
+.slider-option {
+    margin-left: 6px;
+    margin-top: 6px;
+    position: absolute;
+    width: 242px;
+    height: 48px;
+    background-color: rgb(47, 45, 78);
+    border-bottom: 3px solid #2f2d46; 
+    border-radius: 10px;
+    z-index: 1;
+    line-height: 48px;
+    font-size: 18px;
+    font-family: "PFSquareSansProBold";
+    text-align: center;
+    color: white;
+    text-shadow: 0px 1px 1px rgba(7, 41, 79, 1);
+}
+
+.wrapper-slider-option:last-child {
+    margin-right: 0;
+}
+
+.opisanie {
+    padding: 0 33px;
+}
+
+.wrapper-time-bild {
+    margin-left: 108px;
+    margin-top: -45px;
+    position: absolute;
+    width: 750px;
+    height: 110px;
+    border-radius: 10px;
+    border-bottom: 3px solid #acabb4;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.time-bild {
+    margin-left: 12px;
+    margin-top: 9px;
+    position: absolute;
+    width: 725px;
+    height: 89px;
+    background-color: rgb(47, 45, 78);
+    border-bottom: 3px solid #2f2d46; 
+    border-radius: 10px;
+    z-index: 1;
+    line-height: 89px;
+    font-size: 28px;
+    font-family: "PFSquareSansProRegular";
+    text-align: center;
+    color: white;
+    text-shadow: 0px 1px 1px rgba(7, 41, 79, 1);
+}
+
+.time-bild span {
+    font-family: "PFSquareSansProBold";
+}
+
+.opisanie li {
+    border: none;
+    text-align: center;
+    margin-top: 0;
+    height: 61px;
+    line-height: 61px;
+    font-size: 20px;
+    font-family: "PFSquareSansProBold";
+}
+
+.opisanie li:first-child {
+    line-height: 26px;
+}
+
+.option-title {
+    padding: 4px 0;
+}
+
+.option-title span {
+    font-size: 20px;
+    font-family: "PFSquareSansProRegular";
+}
+
+.chis:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 36px;
+    background-color: #91b3d8;
+    margin-left: 113px;
+    margin-top: 13px;
+}
+
+.last:after {
+    display: none;
+}
+
+.first:after {
+    margin-top: -49px;
+    margin-left: 162px;
+}
+
+.line {
+    position: absolute;
+    margin-top: 80px;
+    width: 970px;
+    height: 1px;
+    background: #e8e8e8;
+}
+
+.description {
+    position: absolute;
+    width: 740px;
+    height: 120px;
+}
+
+.img-description {
+    position: absolute;
+    margin-top: 112px;
+    margin-left: 36px;
+}
+
+.description {
+    margin-top: 110px;
+    margin-left: 207px;
+}
+
+.description-list {
+    font-family: "PFSquareSansProBold";
+    font-size: 16px;
+    display: inline-block;
+    list-style: none;
+}
+
+.description-list span {
+    font-family: "PFSquareSansProRegular";
+}
+
+.description-list:first-child {
+    margin-right: 48px;
+}
+
+.description-list:nth-child(2) {
+    margin-right: 48px;
+}
+
+.description-list:nth-child(4) {
+    margin-top: 20px;
+    margin-right: 133px;
+}

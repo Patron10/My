@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fs.selecter.css">
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/jquery.fs.selecter.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jcarousel.basic.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    <script src="js/slick.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi?key=AIzaSyBXAp8Wk-sZOd7wpIJx23GK5y4WR_yCzw8">
+    <script type="text/javascript"charset="utf-8">google.load("maps","2.x"); google.load("jquery","1.3.1");</script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+      <div class="wrapper-header-menu">
+       <menu class="header-menu">
+            <li><a href="#">В начало</a></li>
+            <li><a href="#">Акция</a></li>
+            <li><a href="#">Стоимость</a></li>
+            <li><a href="#">Проекты</a></li>
+            <li><a href="#">Качество</a></li>
+            <li><a href="#">Сроки</a></li>
+            <li><a href="#">Построенные дома</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+        </menu>
+        </div>
+        <div class="header-logo">
+            <div class="logo">
+                <a href="#"><img src="img/logotip.png" alt="logotip"></a>
+            </div>
+            <div class="zakaz">
+               <div class="wrap-zkaz">
+                <p>+ 7 (919) 542-34-21</p>
+                <button type="button">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="header-fon">
+            <div class="content-header-fon">
+                <div class="podkluch">
+                    <p class="title big">Загородные дома</p>
+                    <p class="title small">под ключ с гарантией 20 лет</p>
+                    <div class="day"><img src="img/day.png" alt="day"></div>
+                    <div class="garantia">
+                        <ul>
+                            <li><span class="number">01</span>Без предоплаты</li>
+                            <li><span class="number">02</span>По индивидуальному проекту</li>
+                            <li><span class="number">03</span>Кредит от банков-партнеров</li>
+                            <li>на выгодных условиях</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+-->
+<!--
+       <div class="wrapper-form">
+        <div class="form">
+           <div class="form-center">
+            <p>Оставьте заявку прямо сейчас и получите расчёт сметы - <span>бесплатно</span></p>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Имя">
+                    <input type="number" placeholder="Телефон">
+                    <input type="email" placeholder="E-mail">
+                </form>
+                <button type="button">Отправить заявку</button>
+                </div>
+        </div>
+       </div>
+       <div class="about-company">
+           <p class="title-company">О компании</p>
+           <div class="about-company-infa">Компания строительства домов СК Лидер – мы оказываем полный цикл услуг: строительно-ремонтные работы, осуществляем авторский и технический надзор, 
+проектируем пространства домов.</div>
+      <menu class="bild">
+           <li><img src="img/proekt.png" alt="proekt"><p>Проектирование</p></li>
+           <li class="tire"><img src="img/tire.png" alt="tire"></li>
+           <li><img src="img/3D.png" alt="3D"><p>3D визуализация</p></li>
+           <li class="tire"><img src="img/tire.png" alt="tire"></li>
+           <li><img src="img/stroyka.png" alt="stroyka"><p>Строительство</p></li>
+           <li class="tire"><img src="img/tire.png" alt="tire"></li>
+           <li><img src="img/reconstr.png" alt="reconstr"><p>Реконструкция</p></li>
+       </menu>
+       </div>
+       <div class="wrapper-dream">
+          <div class="dream">
+           <p class="dream-title">Дом вашей мечты</p>
+           <img class="tire-blue" src="img/tire-blue.png" alt="tire-blue">
+           <p class="dream-text">Технологии каркасного строительства позволяют воплощать
+в жизнь любые ваши идеи и архитектурные решения </p>
+      <div class="dream-house top">
+          <div class="dream-house-one"><img src="img/dream-house1.png" alt="dream house 1"></div>
+          <div class="key-house"><img src="img/key.png" alt="key"></div>
+          <div class="content-dream-house-one">
+              <p class="content-dream-house-one-title">Дом под ключ от <span>15 000 руб/м2</span></p>
+              <p class="content-dream-house-one-text">Вам останется только расставить мебель и пригласить гостей на новоселье!</p>
+              <button type="button">Подробнее</button>
+          </div>
+      </div>
+      <div class="dream-house">
+          <div class="dream-house-two"><img src="img/housedream2.png" alt="dream house 2"></div>
+          <div class="instrument-house"><img src="img/instuments.png" alt="instruments"></div>
+          <div class="content-dream-house-two">
+              <p class="content-dream-house-two-title">Базовый дом от <span>15 000 руб/м2</span></p>
+              <p class="content-dream-house-two-text">Для тех, кто предпочитает самостоятельно заниматься
+внутренней отделкой</p>
+              <button type="button">Подробнее</button>
+          </div>
+      </div>
+       </div>
+       </div>
+       <div class="wrapper-present-house">
+           <div class="present-house">
+              <div class="present-house-text">
+               <p class="present-house-text-title">Архитектурный проект <p class="v">В ПОДАРОК</p></p>
+               <p class="present-house-text-infa">Заполните форму заявки, чтобы получить индивидуальный архитектурный проект каркасного дома в подарок</p>
+               </div>
+               <div class="present-house-form">
+                  <div class="present-house-form-content">
+                   <p class="present-house-title">Заполните форму</p>
+                   <form action="#" method="post">
+                    <input type="text" placeholder="Имя"><br>
+                    <input type="number" placeholder="Телефон"><br>
+                    <input type="email" placeholder="E-mail"><br>
+                </form>
+                <button type="button">Отправить заявку</button>
+                </div>
+               </div>
+           </div>
+       </div>
+       <div class="wrapper-projects">
+           <div class="projects">
+               <p class="projects-title">Более 170 проектов с индивидуальной планировкой</p>
+               <div class="tir"><img src="img/tire-blue1.png" alt="tire-blue"></div>
+               <menu class="project-list">
+                    <li><div class="project-list-left"><div class="name">Проект "Валерия"</div><img class="dom" src="img/project.png" alt="project"><div class="data"><p>Площадь: 115,4 м2</p><p>Размеры: 7,35 х 7,85 м</p></div><div class="project-button"><button type="button">Подробнее</button></div><div class="summa"><img class="tr1" src="img/tire-blue1.png" alt="tire1">2 140 000 руб<img class="tr2" src="img/tire-blue1.png" alt="tire1"></div></div></li>
+                   <li><div class="project-list-center"><div class="name">Проект "Валерия"</div><img class="dom" src="img/project.png" alt="project"><div class="data"><p>Площадь: 115,4 м2</p><p>Размеры: 7,35 х 7,85 м</p></div><div class="project-button"><button type="button">Подробнее</button></div><div class="summa"><img class="tr1" src="img/tire-blue1.png" alt="tire1">2 140 000 руб<img class="tr2" src="img/tire-blue1.png" alt="tire1"></div></div></li>
+                   <li><div class="project-list-right"><div class="name">Проект "Валерия"</div><img class="dom" src="img/project.png" alt="project"><div class="data"><p>Площадь: 115,4 м2</p><p>Размеры: 7,35 х 7,85 м</p></div><div class="project-button"><button type="button">Подробнее</button></div><div class="summa"><img class="tr1" src="img/tire-blue1.png" alt="tire1">2 140 000 руб<img class="tr2" src="img/tire-blue1.png" alt="tire1"></div></div></li>
+                   <li><div class="project-list-left"><div class="name">Проект "Валерия"</div><img class="dom" src="img/project.png" alt="project"><div class="data"><p>Площадь: 115,4 м2</p><p>Размеры: 7,35 х 7,85 м</p></div><div class="project-button"><button type="button">Подробнее</button></div><div class="summa"><img class="tr1" src="img/tire-blue1.png" alt="tire1">2 140 000 руб<img class="tr2" src="img/tire-blue1.png" alt="tire1"></div></div></li>
+                    <li><div class="project-list-center"><div class="name">Проект "Валерия"</div><img class="dom" src="img/project.png" alt="project"><div class="dp"><div class="data"><p>Площадь: 115,4 м2</p><p>Размеры: 7,35 х 7,85 м</p></div><div class="project-button"><button type="button">Подробнее</button></div></div><div class="summa"><img class="tr1" src="img/tire-blue1.png" alt="tire1">2 140 000 руб<img class="tr2" src="img/tire-blue1.png" alt="tire1"></div></div></li>
+                   <li><div class="project-list-right"><div class="name">Проект "Валерия"</div><img class="dom" src="img/project.png" alt="project"><div class="data"><p>Площадь: 115,4 м2</p><p>Размеры: 7,35 х 7,85 м</p></div><div class="project-button"><button type="button">Подробнее</button></div><div class="summa"><img class="tr1" src="img/tire-blue1.png" alt="tire1">2 140 000 руб<img class="tr2" src="img/tire-blue1.png" alt="tire1"></div></div></li>
+               </menu>
+           </div>
+       </div>
+       <div class="myProject">
+           <div class="myProject-title">Подберите свой проект</div>
+           <div class="myProject-text">Оставьте заявку и специалист подберет Вам проект по вашим параметрам</div>
+              <div class="wrapper-myProject-form-list">
+               <div class="myProject-form">
+                   <menu class="myProject-form-list">
+                       <li class="mys s1"><p>Желаемая площадь</p><input type="text" placeholder="M"></li>
+                       <li class="mys s2">
+                             <p>Фундамент</p>
+                              <div class="style-select">
+                               <select>
+                                   <option value="1">Винтовые сваи</option>
+                                   <option value="2">Винтовые сваи 1</option>
+                                   <option value="3">Винтовые сваи 2</option>
+                                   <option value="4">Винтовые сваи 3</option>
+                               </select>
+                               </div>
+                       </li>
+                       <li class="mys s3"><p>Кровля</p>
+                              <div class="style-select">
+                               <select>
+                                   <option value="1">Металлочерепица </option>
+                                   <option value="2">Металлочерепица 1</option>
+                                   <option value="3">Металлоречепица 2</option>
+                                   <option value="4">Металлочерепица 3</option>
+                               </select>
+                               </div></li>
+                       <li class="mys s4"><p>Внешняя отделка</p>
+                              <div class="style-select">
+                               <select>
+                                   <option value="1">Имитация бруса </option>
+                                   <option value="2">Имитация бруса 1</option>
+                                   <option value="3">Имитация бруса 2</option>
+                                   <option value="4">Имитация бруса 3</option>
+                               </select>
+                               </div></li>
+                   </menu>
+               </div>
+               </div>
+               <div class="myProject-button">
+               <button type="button">Подобрать проект</button>
+               </div>    
+       </div>
+       <div class="wrapper-step">
+           <div class="step">
+               <p class="step-title">Сотрудничество в 5 простых шагов</p>
+               <menu class="step-li">
+                   <li class="step-one"><p class="step-content"><p class="step-li-title">Оставляете заявку</p>
+                   <p class="step-li-text-one">Оставьте заявку сейчас и мы свяжемся с Вами в течение 10 минут</p>
+                   </p>
+                   </li>
+                   <li class="step-two"><p class="step-content"><p class="step-li-title">Встреча, обсуждение</p>
+                   <p class="step-li-text-one">Оставьте заявку сейчас и мы свяжемся с Вами в течение 10 минут</p>
+                   </p></li>
+                   <li class="step-three"><p class="step-content"><p class="step-li-title">Проектирование, смета</p>
+                   <p class="step-li-text">Разработка проекта с учетом всех деталей и составление подробной проектной сметы</p></p></li>
+               </menu>
+               <div class="menu-two">
+                   <div class="step-for"><p class="step-content"><p class="step-li-title bf">Начало работ</p>
+                   <p class="step-li-text bt">После утверждения сметы мы приступаем к началу строительсва Вашего дома</p>
+                   </p></div>
+                   <div class="step-five"><p class="step-content"><p class="step-li-title bf">Сдача проекта</p>
+                   <p class="step-li-text btt">По завершению строительства мы сдаём Вам готовый  к заселению дом или проект без отделки</p>
+                   </p></div>
+               </div>
+           </div>
+       </div>
+       <div class="wrapper-slider">
+           <div class="slider">
+               <div class="slider-title">
+                   Галерея выполненых объектов
+               </div>
+           </div>
+           <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li>
+                            <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    <p>01  Срок строительства: <span> 54 календарных дней</span></p>
+                                </div>
+                            </div>
+                        <img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                         <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    01  Срок строительства: 54 календарных дней
+                                </div>
+                            </div>
+                            <img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                        <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                         </li>
+                        <li>
+                        <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    01  Срок строительства: 54 календарных дней
+                                </div>
+                            </div>
+                        <img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                        <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    01  Срок строительства: 54 календарных дней
+                                </div>
+                            </div>
+                        <img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                        <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    01  Срок строительства: 54 календарных дней
+                                </div>
+                            </div>
+                        <img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                        <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    01  Срок строительства: 54 календарных дней
+                                </div>
+                            </div><img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                        <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    01  Срок строительства: 54 календарных дней
+                                </div>
+                            </div><img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                        <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    01  Срок строительства: 54 календарных дней
+                                </div>
+                            </div><img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                        <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                        </li>
+                        <li>
+                        <div class="wrapper-time-bild">
+                                <div class="time-bild">
+                                    01  Срок строительства: 54 календарных дней
+                                </div>
+                            </div><img src="img/img-slider.png" width="970" height="582" alt="">
+                        <div class="opisanie">
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Расопложение:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Размеры дома:</div>
+                        </div>
+                        <div class="wrapper-slider-option">
+                            <div class="slider-option">Площадь дома:</div>
+                        </div>
+                        </div>
+                        <menu class="opisanie">
+                        <li class="wrapper-slider-option chis first">
+                            <p class="option-title">Новорязанское шоссе
+                            <br><span>55 км от МКАД</span></p>
+                        </li>
+                        <li class="wrapper-slider-option chis">
+                            8,3м х 8,6м
+                        </li>
+                        <li class="wrapper-slider-option chis last">
+                            112м2
+                        </li>
+                        </menu>
+                        <div class="line"></div>
+                        <div class="img-description"><img src="img/material.png" alt="material"></div>
+                        <div class="description">
+                                <div class="description-list">Фундамент: <br><span>Монолитная, железобетонная лента</span></div>
+                                <div class="description-list">Стены: <br> <span>Каркасные, утепление 150мм</span></div>
+                                <div class="description-list">Кровля: <br><span>Металлочерепица</span></div>
+                                <div class="description-list">Внутренняя отделка: <br> <span>Вагонка</span></div>
+                                <div class="description-list">Наружняя оттделка: <br> <span>Имитация бруса с покраской</span></div>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev verh"><img src="img/top-left-arrow.png" alt=""></a>
+                <a href="#" class="jcarousel-control-next verh lft"><img src="img/top-right-arrow.png" alt=""></a>
+                <a href="#" class="jcarousel-control-prev"><img src="img/left-arrow.png" alt=""></a>
+                <a href="#" class="jcarousel-control-next"><img src="img/right-arrow.png" alt=""></a>
+                <p class="jcarousel-pagination">
+                </p>
+            </div>
+            </div>
+           <div class="wrapper-zabor">
+              <div class="zabor">
+               <div class="present-house-text">
+               <p class="present-house-text-title center">ЗАБОР <p class="v">В ПОДАРОК</p></p>
+               <p class="present-house-text-infa center-infa">Сэкономьте <span>100 000 рублей</span> при заключении договора на строительство дома - мы Вам <span>ПОДАРИМ</span> забор!</p>
+               </div>
+                <div class="present-house-form">
+                  <div class="present-house-form-content">
+                   <p class="present-house-title">Заполните форму</p>
+                   <form action="#" method="post">
+                    <input type="text" placeholder="Имя"><br>
+                    <input type="number" placeholder="Телефон"><br>
+                    <input type="email" placeholder="E-mail"><br>
+                </form>
+                <button type="button">Отправить заявку</button>
+                </div>
+               </div>
+               </div>
+           </div>
+           <div class="wrapper-workers">
+               <div class="worker">
+                   <div class="worker-title">
+                       Все бригадиры граждане РФ, имеющие сертификацию <p>с опытом работы более 10 лет</p>
+                   </div>
+                   <menu class="man">
+                      <li class="one">
+                        <div class="content"><img src="img/man.png" alt="man"><div class="name-man"><div class="name-man-text">Михаил Иванов <br> <span>Кровельщик</span></div></div></div>
+                      </li>
+                      <li class="two">
+                   <menu>
+                        <li>
+                                <div class="content"><img src="img/man.png" alt="man"><div class="name-man"><div class="name-man-text">Михаил Иванов <br> <span>Кровельщик</span></div></div></div>
+                        </li>
+                        <li>
+                                <div class="content"><img src="img/man.png" alt="man"><div class="name-man"><div class="name-man-text">Михаил Иванов <br> <span>Кровельщик</span></div></div></div>
+                        </li>
+                        <li>
+                                <div class="content"><img src="img/man.png" alt="man"><div class="name-man"><div class="name-man-text">Михаил Иванов <br> <span>Кровельщик</span></div></div></div>
+                        </li>
+                   </menu>
+                      </li>
+                   </menu>
+                   <menu class="man second">
+                      <li class="one">
+                        <div class="content"><img src="img/man.png" alt="man"><div class="name-man"><div class="name-man-text"> Михаил Иванов <br> <span>Кровельщик</span></div></div></div>
+                      </li>
+                      <li class="two">
+                   <menu>
+                        <li>
+                                <div class="content"><img src="img/man.png" alt="man"><div class="name-man"><div class="name-man-text">Михаил Иванов <br> <span>Кровельщик</span></div></div></div>
+                        </li>
+                        <li>
+                                <div class="content"><img src="img/man.png" alt="man"><div class="name-man"><div class="name-man-text">Михаил Иванов <br> <span>Кровельщик</span></div></div></div>
+                        </li>
+                        <li>
+                                <div class="content"><img src="img/man.png" alt="man"><div class="name-man"><div class="name-man-text">Михаил Иванов <br> <span>Кровельщик</span></div></div></div>
+                        </li>
+                   </menu>
+                      </li>
+                   </menu>
+               </div>
+           </div>
+           <div class="wrapper-house-bild">
+               <div class="house-bild">
+                   <div class="house-bild-title">
+                       Ваш дом строится за <span> 60 дней </span>
+                       <p>Независимый технический надзор ГЛАВМОССТРОЙ <br> на всех этапах реализации проекта</p>
+                   </div>
+                   <menu class="house-bild-link">
+                       <li>Фундамент<p><img src="img/dom1.png" alt=""><div class="days"><p>10<br><span>дней</span></p></div></p></li>
+                       <li>Каркас<p><img src="img/dom2.png" alt=""><div class="days"><p>19<br><span>дней</span></p></div></p></li>
+                       <li>Кровля<p><img src="img/dom3.png" alt=""><div class="days"><p>10<br><span>дней</span></p></div></p></li>
+                       <li>Окна и двери<p><img src="img/dom4.png" alt=""><div class="days"><p>6<br><span>дней</span></p></div></p></li>
+                       <li>Инденерия<p><img src="img/dom5.png" alt=""><div class="days"><p>7<br><span>дней</span></p></div></p></li>
+                       <li>Отделка<p><img src="img/dom6.png" alt=""><div class="days"><p>8<br><span>дней</span></p></div></p></li>
+                   </menu>
+                   <div class="house-bild-button">
+               <button type="button">Рассчитать стоимость работы</button>
+               </div> 
+               </div>
+           </div>
+           <div class="wrapper-form-bottom">
+               <div class="form-bottom">
+               <div class="present-house-text">
+               <p class="present-house-text-title bottom ">Архитектурный проект<p class="vb">В ПОДАРОК</p></p>
+               <p class="present-house-text-infa center-infa infa-bottom">Заполните форму заявки, чтобы получить индивидуальный архитектурный проект каркасного дома в подарок</p>
+               </div>
+                <div class="present-house-form bot">
+                  <div class="present-house-form-content">
+                   <p class="present-house-title">Заполните форму</p>
+                   <form action="#" method="post">
+                    <input type="text" placeholder="Имя"><br>
+                    <input type="number" placeholder="Телефон"><br>
+                    <input type="email" placeholder="E-mail"><br>
+                </form>
+                <button type="button">Отправить заявку</button>
+                </div>
+               </div>
+               </div>
+           </div>
+           <div class="wrapper-comment">
+               <div class="comment">
+                   <div class="comment-title">
+                       Отзывы наших клиентов
+                   </div>
+                   <menu class="comment-list">
+                       <li class="one bott1"><div class="content content2"></div></li>
+                       <li class="two bott2">
+                           <menu>
+                               <li><div class="content content2"></div></li>
+                               <li><div class="content content2"></div></li>
+                           </menu>
+                       </li>
+                   </menu>
+                  <div class="sl">
+                      <div class="sl__slider"><img src="img/comment.png" alt="comment" class="sl__img" style="margin-left: 0px;" onmouseover="this.src='img/comment-hover.png';" onmouseout="this.src='img/comment.png';"></div>
+                      <div class="sl__slider"><img src="img/comment.png" alt="comment" class="sl__img" onmouseover="this.src='img/comment-hover.png';" onmouseout="this.src='img/comment.png';"></div>
+                      <div class="sl__slider"><img src="img/comment.png" alt="comment" class="sl__img" style="margin-left: 44px;" onmouseover="this.src='img/comment-hover.png';" onmouseout="this.src='img/comment.png';" onmouseover="this.src='img/comment-hover.png';" onmouseout="this.src='img/comment.png';"></div>
+                      <div class="sl__slider"><img src="img/comment.png" alt="comment" class="sl__img" style="margin-left: 0px;" onmouseover="this.src='img/comment-hover.png';" onmouseout="this.src='img/comment.png';"></div>
+                      <div class="sl__slider"><img src="img/comment.png" alt="comment" class="sl__img" onmouseover="this.src='img/comment-hover.png';" onmouseout="this.src='img/comment.png';"></div>
+                      <div class="sl__slider"><img src="img/comment.png" alt="comment" class="sl__img" style="margin-left: 44px;" onmouseover="this.src='img/comment-hover.png';" onmouseout="this.src='img/comment.png';"></div>
+                  </div>
+               </div>
+           </div>
+           <div class="wrapper-partners">
+               <div class="partners">
+                   <div class="partners-title">
+                       Наши партнеры
+                   </div>
+                   <div class="slick">
+                       <div class="slick__slider"><img src="img/partner1.png" alt="partner1" class="slick__img" style="width: 111px; margin: 0 auto;"></div>
+                       <div class="slick__slider"><img src="img/partner2.png" alt="partner2" class="slick__img" style="width: 136px; margin: 0 auto;"></div>
+                       <div class="slick__slider"><img src="img/partner3.png" alt="partner3" class="slick__img" style="width: 90px; margin: 0 auto;"></div>
+                       <div class="slick__slider"><img src="img/partner1.png" alt="partner1" class="slick__img" style="width: 111px; margin: 0 auto;"></div>
+                       <div class="slick__slider"><img src="img/partner2.png" alt="partner2" class="slick__img" style="width: 136px; margin: 0 auto;"></div>
+                       <div class="slick__slider"><img src="img/partner3.png" alt="partner3" class="slick__img" style="width: 90px; margin: 0 auto;"></div>
+                       <div class="slick__slider"><img src="img/partner1.png" alt="partner1" class="slick__img" style="width: 111px; margin: 0 auto;"></div>
+                       <div class="slick__slider"><img src="img/partner2.png" alt="partner2" class="slick__img" style="width: 136px; margin: 0 auto;"></div>
+                       <div class="slick__slider"><img src="img/partner3.png" alt="partner3" class="slick__img" style="width: 90px; margin: 0 auto;"></div>
+                   </div>
+               </div>
+           </div>
+           <div class="wrapper-contacts">
+               <div class="contacts">
+                   <div class="contacts-title">
+                       Наши контакты
+                   </div>
+                   <div class="number1">+7 (499) 649-76-84</div>
+                   <div class="mail"><a href="#">info@remont.ru</a></div>
+                   <div class="address">г. Москва, ул. Русаковская, 13</div>
+                   <div class="socials">
+                       <div class="socials-content">
+                           <p>Мы в социальных сетях</p>
+                           <div class="icon">
+                               <menu>
+                                   <li><a href="#"><img src="img/vk_03.png" alt="vk"></a></li>
+                                   <li><a href="#"><img src="img/fb_03.png" alt="fb"></a></li>
+                                   <li><a href="#"><img src="img/twitter_03.png" alt="twitter"></a></li>
+                                   <li><a href="#"><img src="img/mail_03.png" alt="mail"></a></li>
+                               </menu>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                <div class="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d146197.3851981908!2d61.18824152395888!3d55.07239931541714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c58c43997e2035%3A0x1da89c6d0fa16709!2z0KHQvtCy0LXRgtGB0LrQuNC5INGALdC9LCDQp9C10LvRj9Cx0LjQvdGB0LosINCn0LXQu9GP0LHQuNC90YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1474972895332" width="960" height="410" frameborder="0" style="border:0;" allowfullscreen></iframe>
+           </div>
+           </div>
+            <div class="wrapper-question">
+                <div class="question">
+                    <div class="question-text">Остались вопросы?</div>
+                    <button type="button">Задать вопрос</button>
+                </div>
+            </div>
+            </div>
+            <footer>
+                <div class="footer-content">
+                    <menu>
+                        <li>Строительство домов с гарантией в КЗН и РТ</li>
+                        <li>&#169; 2016-2020. Строительная компания</li>
+                        <li>+ 7 (919) 542-34-21 <button type="button">Задать вопрос</button></li>
+                    </menu>
+                </div>
+            </footer>
+-->
+</body>
+</html>
