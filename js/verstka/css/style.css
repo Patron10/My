@@ -1359,7 +1359,7 @@ li .content2:hover {
 
 .contacts {
     position: relative;
-    width: 1270px;
+    max-width: 1270px;
     margin: 0 auto;
 }
 
@@ -1441,7 +1441,7 @@ li .content2:hover {
 }
 
 .map {
-    width: 1270px;
+    max-width: 960px;
     margin: 0 auto;
     margin-top: -56px;
 }
