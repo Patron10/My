@@ -1546,7 +1546,9 @@ li .content2:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
-
+.adaptiv-header-menu1 {
+        display: none;
+    }
 
 @media (max-width: 893px) {
     .header-menu li {
@@ -1556,6 +1558,9 @@ li .content2:hover {
     .header-menu li:nth-child(7) {
         max-width: 19%;
 }
+    .adaptiv-header-menu1 {
+        display: none;
+    }
 
 @media (max-width: 849px) {
     .header-menu li {
@@ -1564,6 +1569,9 @@ li .content2:hover {
 }
     .header-logo p {
         margin-right: 30px;
+    }
+    .adaptiv-header-menu1 {
+        display: none;
     }
 
 @media (max-width: 768px) { 
@@ -1578,6 +1586,9 @@ li .content2:hover {
     .header-menu li:nth-child(7) {
     max-width: 19%;
 }
+    .adaptiv-header-menu1 {
+        display: none;
+    }
 }
     
 @media (min-width: 750px) and (max-width: 759px) {
@@ -1585,9 +1596,12 @@ li .content2:hover {
     .header-menu li:nth-child(7) {
         max-width: 20%;
 }
+    .adaptiv-header-menu1 {
+        display: none;
+    }
 }
     
-@media (max-width: 749px) and (min-width: 641px) {
+@media (max-width: 749px) and (min-width: 640px) {
         
     .header-menu li a {
         font-size: 15px;
@@ -1596,31 +1610,148 @@ li .content2:hover {
     .header-menu li:nth-child(7) {
         max-width: 21%;
     }
-}
     
-@media (max-width: 640px) {
+    .adaptiv-header-menu1 {
+        display: none;
+    }
+    
+    .header-logo p {
+        font-size: 16px;
+        margin-right: 0;
+    }
+    
+    .zakaz button {
+        width: 180px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+}
+
+    
+@media (min-width: 320px) and (max-width: 639px) {
     
     header {
-        max-width: 640px;
+        max-width: 639px;
     }
     
     .wrapper-header-menu {
-        max-width: 640px;
+        position: relative;
+        max-width: 639px;
     }
     
-    .header-menu {
-        max-width: 640px;
+     .header-menu {
+        display: none;
     }
     
-    .header-menu li {
-        margin-right: 0%;
+    .adaptiv-header-menu1 {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 95px;
     }
     
-    .header-menu li:nth-child(7) {
-    width: 23%;
+    .adaptiv-header-menu1-left {
+        display: inline-block;
     }
     
-    .header-menu li a {
+    .adaptiv-header-menu1-center {
+        display: inline-block;
+    }
+    
+    .adaptiv-header-menu1-right {
+        display: inline-block;
+    }
+    
+    .adaptiv-header-menu1-left,
+    .adaptiv-header-menu1-right,
+    .adaptiv-header-menu1-center {
+        list-style: none;
+        width: 32%;
+        text-align: center;
+        height: 95px;
+    }
+    
+    .adaptiv-header-menu1-left li,
+    .adaptiv-header-menu1-right li,
+    .adaptiv-header-menu1-center li{
+        margin-bottom: 5%;
+        height: 25px;
+        line-height: 25px;
+    }
+    
+    .adaptiv-header-menu1-left li a,
+    .adaptiv-header-menu1-right li a,
+    .adaptiv-header-menu1-center li a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-family: "PFSquareSansProRegular";  
+    }
+    
+    .adaptiv-header-menu1-left li a:hover {
+        border-bottom: 1px solid #2e70b8;
+    }
+    
+    .adaptiv-header-menu1-center li a:hover {
+        border-bottom: 1px solid #2e70b8;
+    }
+    
+    .adaptiv-header-menu1-right li a:hover {
+        border-bottom: 1px solid #2e70b8;
+    }
+    
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header-logo {
+        height: 150px;
+    }
+    
+    .header-logo p {
+        margin-right: 0;
+        font-size: 16px;
+    }
+    
+    .zakaz {
+        float: right;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        line-height: 42px;
+    }
+    
+    .wrap-zkaz {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .zakaz button {
+        float: right;
+    }
+    
+}
+
+    
+@media (min-width: 320px) and (max-width: 450px) {
+    
+    .adaptiv-header-menu1-left li a,
+    .adaptiv-header-menu1-right li a,
+    .adaptiv-header-menu1-center li a {
+        font-size: 12px;  
+    }
+    
+    .zakaz button {
+        float: right;
+        width: 180px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .header-logo p {
         font-size: 15px;
     }
-    }
+    
+}
