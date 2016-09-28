@@ -7,6 +7,22 @@ html {
     height: 100%;
 }
 
+/*
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+footer, .page-wrap:after {
+    height: 80px;
+}
+
+.page-wrap {
+    min-height: 94%;
+    margin-bottom: -80px;
+}
+*/
+
 @font-face {
     font-family: 'proxima_nova_rgregular';
     src: url('../fonts/proxima_nova_regular-webfont.eot');
@@ -48,11 +64,11 @@ html {
 }
 
 header {
-    width: 100%;
+    max-width: 100%;
 }
 
 .wrapper-header-menu {
-    width: 100%;
+    max-width: 100%;
     border-bottom: 1px solid #e8e8e8;
 }
 
@@ -1530,19 +1546,7 @@ li .content2:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
-.page-wrap:after {
-    content: "";
-    display: block;
-}
 
-footer, .page-wrap:after {
-    height: 80px;
-}
-
-.page-wrap {
-    min-height: 94%;
-    margin-bottom: -80px;
-}
 
 @media (max-width: 893px) {
     .header-menu li {
@@ -1576,7 +1580,34 @@ footer, .page-wrap:after {
 }
 }
     
+@media (min-width: 750px) and (max-width: 759px) {
+    
+    .header-menu li:nth-child(7) {
+        max-width: 20%;
+}
+}
+    
+@media (max-width: 749px) and (min-width: 641px) {
+        
+    .header-menu li a {
+        font-size: 15px;
+    }
+    
+    .header-menu li:nth-child(7) {
+        max-width: 21%;
+    }
+}
+    
 @media (max-width: 640px) {
+    
+    header {
+        max-width: 640px;
+    }
+    
+    .wrapper-header-menu {
+        max-width: 640px;
+    }
+    
     .header-menu {
         max-width: 640px;
     }
@@ -1584,10 +1615,12 @@ footer, .page-wrap:after {
     .header-menu li {
         margin-right: 0%;
     }
+    
     .header-menu li:nth-child(7) {
-    max-width: 23%;
+    width: 23%;
     }
     
     .header-menu li a {
-        font-size: 14px;
+        font-size: 15px;
+    }
     }
