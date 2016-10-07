@@ -300,7 +300,7 @@ header {
 
 .about-company {
     height: 496px;
-    width: 956px;
+    max-width: 960px;
     margin: 0 auto;
     text-align: center;
 }
@@ -1551,10 +1551,67 @@ li .content2:hover {
         display: none;
     }
 
+.bild-adaptive {
+    display: none;
+}
+
 @media (max-width: 970px) {
     
     .form {
         max-width: 886px;
+    }
+}
+
+@media (max-width: 960px) {
+    
+    .bild {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    
+    .title-company {
+        margin-top: 40px;
+    }
+    
+    .about-company-infa {
+        padding: 20px 60px;
+    }
+    
+    .bild-adaptive {
+        display: block;
+    }
+    
+    .bild-adaptive li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    .aqq {
+        width: 768px;
+        margin: 0 auto;
+    }
+    
+    .aqq li:first-child {
+        margin-right: 50px;
+    }
+    
+    .tire {
+        line-height: 0;
+        position: absolute;
+        margin-left: -44px;
+        padding: 0;
+        margin-top: 85px;
+    }
+    
+    .bild-adaptive p {
+        margin-top: 10px;
+        font-size: 18px;
+        font-family: "PFSquareSansProMedium";
+}
+    .aqq:last-child {
+        margin-top: 40px;
     }
 }
 
@@ -1856,6 +1913,10 @@ li .content2:hover {
     
     .day {
         float: none;
+    }
+    
+    .garantia {
+        margin-top: 0;
     }
     
      .form {
