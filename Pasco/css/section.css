@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wrapper-section {
+    overflow: hidden;
+    width: 100%;
+    background-image: url(../img/fon-section.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px; 
+}
+
+section {
+    overflow: hidden;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.section-header {
+    overflow: hidden;
+}
+
+.logotip {
+    width: 8%;
+    float: left;
+    line-height: 70px;
+}
+
+nav {
+    overflow: hidden;
+    width: 77%;
+    float: left;
+}
+
+nav menu {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+.nav-top {
+    display: block;
+}
+
+.nav-top:hover {
+    border-bottom: 4px solid #ff4081;
+    padding-bottom: 0;
+    margin-bottom: -4px;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+nav li a img {
+    margin-left: 11px;
+    margin-bottom: 2px;
+}
+
+nav li a:hover {
+    display: block;
+    width: 100%;
+    color: #85c0df;
+    background-position: right 20px  top 26px;
+}
+
+.nav-podmenu {
+    position: absolute;
+    display: none;
+}
+
+.nav-podmenu li {
+    display: block;
+    padding-right: 0;
+    background: none;
+    height: 30px;
+    line-height: none;
+}
+
+.nav-podmenu li a {
+    line-height: none;
+}
+
+.nav-podmenu li a:hover {
+    
+}
+
+nav menu li:hover .nav-podmenu {
+    display: block;
+}
+
+.function {
+    margin: 21px 0;
+    overflow: hidden;
+    float: right;
+    width: 14%;
+}
+
+.function menu {
+    overflow: hidden;
+    float: right;
+}
+
+.function li {
+    display: inline-block;
+    padding-right: 14px;
+}
+
+.function li:nth-child(2) {
+    border-right: 1px solid #545454;
+    border-left: 1px solid #545454;
+    padding-left: 14px;
+}
+
+.function li:last-child {
+    padding-right: 0;
+    padding-left: 14px;
+}
+
+.slider {
+    width: 92%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    outline: none;
+}
+
+article {
+    outline: none;
+}
+
+.readmore {
+    border-radius: 22px;
+    background-color: rgb(48, 63, 159);
+    box-shadow: 0px 17px 24px 0px rgba(48, 63, 159, 0.2);
+    width: 170px;
+    margin: 0 auto;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 30px;
+}
+
+.readmore a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+.caption-slider {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.702);
+    letter-spacing: 1px;
+}
+
+.text {
+    margin-top: 15px;
+    font-size: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.avatar img {
+    margin: 0 auto;
+}
+
+.about-author {
+    margin-top: 80px;
+}
+
+.name {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.date {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    color: rgba(255, 255, 255, 0.541);
+    margin-bottom: 20px;
+}
+
+.comments, .likes {
+    display: inline-block;
+}
+
+.comments a, .likes a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    color: rgba(255, 255, 255, 0.702);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.comments {
+    margin-right: 25px;
+}
+
+.comments img {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: -2px;
+}
+
+.likes img {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: -2px;
+}
+
+@media (max-width: 1000px) {
+    
+    .logotip {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav menu {
+        float: none;
+        text-align: center;
+    }
+    
+    .function {
+        width: 100%;
+    }
+    
+    .function menu {
+        float: none;
+        text-align: center;
+    }
+    
+    .nav-podmenu li:last-child {
+        margin-right: 25px;
+    }
+    
+}
+
+@media (min-width: 808px) and (max-width: 1001px) {
+    
+    section {
+        padding-bottom: 100px;
+    }
+    
+}
+
+@media (max-width: 807px) {
+    
+    .text {
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    nav li {
+        margin-right: 10px;
+    }
+    
+    .nav-podmenu li:last-child {
+        margin-right: 10px;
+    }
+    
+    .text {
+        font-size: 30px;
+    }
+    
+    .about-author {
+        margin-top: 35px;
+    }
+    
+}
+
+@media (min-width: 661px) {
+    
+    nav ul {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 660px) {
+    
+    .logotip {
+        width: 33%;
+        float: left;
+    }
+    
+    .function {
+        width: 33%;
+        float: right;
+    }
+    
+    nav {
+        width: 33%;
+    }
+    
+    nav menu {
+        display: none;
+    }
+    
+    nav li {
+        display: block;
+        height: auto;
+        line-height: auto;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    
+    ul li {
+        text-align: center;
+    }
+    
+    .nav-mobile-podmenu {
+        display: none;
+    }
+    
+    .nav-mobile-podmenu li {
+        line-height: 30px;
+    }
+    
+    .nav-mobile-podmenu li a {
+        display: inline;
+    }
+    
+    .nav-mobile:hover .nav-mobile-podmenu {
+        display: block;
+    }
+    
+    section {
+        padding-bottom: 0;
+        height: 270px;
+    }
+    
+    .slider {
+        padding-top: 40px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
+    .wrapper-section {
+        background: #3f51b5;
+        height: 70px;
+        overflow: visible;
+    }
+    
+    section {
+        height: 70px;
+        overflow: visible;
+    }
+    
+    .logotip {
+        line-height: 70px;
+        float: right;
+        max-width: 33%;
+        text-align: center;
+    }
+    
+    .function {
+        max-width: 33%;
+    }
+    
+    .function menu {
+        text-align: right;
+        margin-right: 5px;
+    }
+    
+    .function menu li:first-child {
+        display: none;
+    }
+    
+    .function menu li:nth-child(2) {
+        display: none;
+    }
+    
+    .function menu li:last-child {
+        padding-left: 0;
+        display: block;
+        margin-right: 30px;
+    }
+    
+    .shop:after {
+        content: url(../img/shop-a.png);
+        position: absolute;
+        right: 3px;
+        top: 39px;
+    }
+    
+    nav {
+        float: left;
+        min-width: 11%;
+        max-width: 33%;
+    }
+    
+    nav ul {
+        width: 50%;
+        background: #3f51b5;
+    }
+    
+    ul li {
+        text-align: left;
+    }
+    
+    .nav-mobile-podmenu {
+        position: absolute;
+        z-index: 3;
+    }
+    
+    .nav-mobile-podmenu li {
+        text-align: center;
+    }
+    
+    .slider {
+        display: none;
+    }
+    
+}
