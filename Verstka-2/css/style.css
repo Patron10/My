@@ -171,6 +171,18 @@ header {
     
 }
 
+@media (max-width: 767px) {
+    
+    .dropdown:hover .dropdown-display {
+        display: none;
+    }
+    
+    .caret {
+        display: none;
+    }
+    
+}
+
 @media (max-width: 640px) {
     
     .template {
