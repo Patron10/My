@@ -5,11 +5,24 @@
     list-style: none;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
     background: #edece8;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.hFooter {
+    height: 80px;
+    clear: both;
 }
 
 header {

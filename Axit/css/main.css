@@ -282,6 +282,54 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
+.textarea textarea {
+    line-height: normal;
+    height: 170px;
+    width: 80%;
+    resize: none;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bdbdbd; 
+}
+
+.send-message {
+    margin-top: 15px;
+    box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75);
+}
+
+footer {
+    background: black;
+    height: 80px;
+    margin-top: -80px;
+    overflow: hidden;
+}
+
+.icon-footer {
+    margin: 0 auto;
+}
+
+.icon-footer li {
+    padding: 0 5px;
+}
+
+.icon-footer li a {
+    padding-bottom: 11px;
+}
+
+.icon-footer i {
+    font-size: 24px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: 1199px) {
     
     .customers {
@@ -330,6 +378,10 @@
     
     .container-option {
         width: 100%;
+    }
+    
+    .icon-footer li {
+        padding: 0 2px;
     }
     
 }
