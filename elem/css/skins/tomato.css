@@ -5,7 +5,8 @@ body {
 a {
   color: #FF6347; }
 
-p {
+p,
+body .main_footer {
   color: #888; }
 
 .color_element {
@@ -17,18 +18,39 @@ p {
 .color_border {
   border-color: #FF6347; }
 
+.bg_light {
+  background-color: #FAFAFA; }
+
+.bg_dark {
+  background-color: #222;
+  color: #fff; }
+  .bg_dark .s_descr::after {
+    background-color: #fff; }
+  .bg_dark a {
+    color: #fff; }
+
 .main_color_bg {
-  background-color: #222; }
-  .main_color_bg path {
-    fill: #222; }
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1; }
+
+svg path {
+  fill: rgba(255, 255, 255, 0.9); }
 
 .toggle_mnu {
-  background-color: #222; }
+  background-color: #000; }
 
 .top_mnu a:hover {
-  color: #FF6347;
-  background-color: rgba(255, 255, 255, 0.05); }
+  color: #FF6347; }
 .top_mnu a {
   letter-spacing: 4px; }
+
+.top_text p {
+  color: #FAFAFA;
+  letter-spacing: 5px; }
+
+.s_descr {
+  letter-spacing: 5px; }
+  .s_descr::after {
+    background-color: #222; }
 
 /*# sourceMappingURL=tomato.css.map */
