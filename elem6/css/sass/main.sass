@@ -23,6 +23,13 @@ body textarea:required:valid
 section,
 .main_head
   position: relative
+  h3
+    text-align: center
+    text-transform: uppercase
+    font-weight: 400
+    dont-size: 13px
+    margin-top: 0
+    margin-bottom: 25px
 
 section
   padding: 70px 0 90px
@@ -31,6 +38,10 @@ section
     font-size: 24px
     text-transform: uppercase
     margin: 0 0 15px
+  .personal_header
+    font-size: 13px
+    text-align: left
+    margin-bottom: 25px
 
 .s_descr_wrap
   text-align: center
@@ -178,12 +189,20 @@ li
 ul
   margin-top: 180px
   text-align: center
+  li
+    &:nth-child(1) a
+      +animation-duration(.5s)
+    &:nth-child(2) a
+      +animation-duration(1s)
+    &:nth-child(3) a
+      +animation-duration(1.5s)
+    &:nth-child(4) a
+      +animation-duration(2s)
   a
     color: #fff
     display: block
     text-transform: uppercase
     font-size: 12px
-    opacity: 0
     position: relative
     height: 60px
     span
@@ -215,6 +234,7 @@ ul
     p
       margin: 0
       text-transform: uppercase
+      +animation-delay(1s)
     h1
       display: inline-block
       padding: 10px 35px
@@ -223,6 +243,7 @@ ul
       text-transform: uppercase
       font-size: 2.8em
       background-color: rgba(0,0,0,.4)
+      +animation-delay(.5s)
     
 .h_opacify
   opacity: 0.3
@@ -235,3 +256,49 @@ ul
 
 .f_padding
   padding: 0
+
+.social_wrap
+  ul
+    margin: 0
+    
+.person
+  text-align: center
+  margin-bottom: 35px
+  img
+    max-width: 220px
+    display: inline-block
+    border-radius: 50%
+    
+.s_about
+  p
+    margin-bottom: 25px
+  li
+    margin-bottom: 10px
+    
+.skills
+  margin: 0
+  li
+    text-align: left
+    list-style-type: none
+    padding: 0
+    a
+      height: auto
+      color: #FF6347
+      display: inline
+      text-transform: none
+    
+.social_wrap
+  margin-top: 20px
+  ul
+    text-align: left
+    li
+      display: inline-block
+      padding: 0 3px
+      a
+        height: auto
+        color: #FF6347
+        i
+          font-size: 20px
+        
+a:focus
+  outline: none
