@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Заголовок</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="area.size" content="width=100%,height=100%">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript">
+        function initialize() {
+            var latlng = new google.maps.LatLng(55.741419, 37.5405201);
+            var settings = {
+                scrollwheel: false,
+                zoom: 17,
+                center: latlng,
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+                },
+                navigationControl: true,
+                navigationControlOptions: {
+                    style: google.maps.NavigationControlStyle.SMALL
+                },
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                settings);
+            var companyPos = new google.maps.LatLng(55.741419, 37.5405201);
+            var companyMarker = new google.maps.Marker({
+                position: companyPos,
+                map: map,
+                title: "Some title"
+            });
+        }
+    </script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body onload="initialize()">
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <header class="main_head main_color_bg" data-parallax="scroll" data-image-src="img/_bg.png">
+        <div class="social-wrap">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li>
+                            <a href="https://vk.com" class="vk" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" class="facebook" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" class="instagram" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" class="twitter" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="menu-line">
+                    <div class="logotip">
+                        <a href="index.html">
+                        <img src="img/logo-max.png" alt="logotip">
+                        </a>
+                    </div>
+                    <div class="navigation-panel">
+                        <a href="#" class="toggle-mnu"><span></span></a>
+                        <nav class="navigation-menu hiden">
+                            <ul>
+                                <li><a href="index.html">Главная</a>
+                                </li>
+                                <li><a href="about-company.html">О компании</a>
+                                </li>
+                                <li><a href="uslugi.html">Услуги</a>
+                                </li>
+                                <li><a href="project.html">Проекты</a>
+                                </li>
+                                <li><a href="contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="navigation-menu mobile">
+                            <ul>
+                                <li><a href="index.html">Главная</a>
+                                </li>
+                                <li><a href="about-company.html">О компании</a>
+                                </li>
+                                <li><a href="uslugi.html">Услуги</a>
+                                </li>
+                                <li><a href="project.html">Проекты</a>
+                                </li>
+                                <li><a href="contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search-icon">
+                            <a href="#" class="search2">
+                                <img src="img/search-icon.png" alt="search">
+                            </a>
+                            <div class="login-content2">
+                                <form name="loginform" >
+                                        <input type="search" name="s" placeholder="Поиск..." required>
+                                        <input type="submit" value="Найти">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-header">
+                    <div class="text-header">
+                        <h1>
+                        Строительство зданий и сооружений любой сложности
+                    </h1>
+                        <h3>По Москве и Московской области от 9000 руб./м2</h3>
+
+                        <div class="more-question mq-terms">
+                            <a href="#form" class="popup-free">Отправить заявку</a>
+                        </div>
+                        <div class="hidden-popup-form">
+                            <div class="form-popup-decor popup_zakaz" id="form">
+                                <h2>
+                                    заказать обратный звонок
+                                </h2>
+                                <div class="line-title-popup"></div>
+                                <h4 class="h4-form">Заполните поля ниже и мы свяжемся с Вами <span class="h4-span">в ближайшее время!</span></h4>
+                                <form>
+                                    <input type="text" placeholder="Имя" required>
+                                    <input type="tel" placeholder="Телефон" required>
+                                    <input type="submit" value="Отправить заявку">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mouse_scroll">
+
+                    <a href="#s_1">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div>
+                            <span class="m_scroll_arrows unu"></span>
+                            <span class="m_scroll_arrows doi"></span>
+                            <span class="m_scroll_arrows trei"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-company" id="s_1">
+        <div class="container">
+            <div class="row">
+                <div class="title-section">
+                    <h1>о компании</h1>
+                </div>
+                <div class="content-section-about-company">
+                    <div class="img-about-company">
+                        <div class="frame-img"></div>
+                        <div class="block-img">
+                            <img src="img/about-pics.png" alt="about-pics">
+                        </div>
+                    </div>
+                    <div class="text-about-company">
+                        <p><span>Строительная компания «Max»</span> создана группой единомышленников, имеющих за плечами богатый опыт работы, полученный в ходе реализации различных проектов. компания осуществляет поставки материалов крупнейшим строительным фирмам Москвы и Московской области, имеет контракты со многими заводами на территории Российской Федерации и Республики Беларусь.
+                        </p>
+                        <p><span>Отдельное направление работы – девелоперские проекты.</span> “Max” обладает несколькими собственными инвестиционными проектами, а также осуществляет управление проектами на юге, западе, северо-западе и севере Московской области. В портфеле компании имеется множество земельных участков под строительство многоэтажных жилых домов, а также подходящих для малоэтажного и индивидуального жилищного строительства...</p>
+                    </div>
+                </div>
+                <div class="more">
+                    <a href="#">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-uslugi">
+        <div class="container">
+            <div class="row">
+                <div class="title-section">
+                    <h1>наши услуги</h1>
+                </div>
+                <div class="wrap-uslugi-list">
+                    <a href="#" class="wrap-wrap-usluga col-lg-4 col-md-4 col-sm-6">
+                        <div class="wrap-usluga">
+                            <div class="number-usluga">
+                                01
+                            </div>
+                            <div class="wrap-img-usluga">
+                                <img src="img/uslugi1.png" alt="usluga1">
+                            </div>
+                        </div>
+                        <p class="title-usluga">
+                            Проектирование
+                        </p>
+                        <div class="circle-title">
+
+                        </div>
+                    </a>
+                    <a href="#" class="wrap-wrap-usluga col-lg-4 col-md-4 col-sm-6">
+                        <div class="wrap-usluga">
+                            <div class="number-usluga">
+                                02
+                            </div>
+                            <div class="wrap-img-usluga">
+                                <img src="img/uslugi2.png" alt="usluga1">
+                            </div>
+                        </div>
+                        <p class="title-usluga">
+                            Строительство под сдачу инженерных коммуникаций
+                        </p>
+                        <div class="circle-title">
+
+                        </div>
+                    </a>
+                    <a href="#" class="wrap-wrap-usluga col-lg-4 col-md-4 col-sm-6">
+                        <div class="wrap-usluga">
+                            <div class="number-usluga">
+                                03
+                            </div>
+                            <div class="wrap-img-usluga">
+                                <img src="img/uslugi3.png" alt="usluga1">
+                            </div>
+                        </div>
+                        <p class="title-usluga">
+                            Сборка ЦТП и ИТП
+                        </p>
+                        <div class="circle-title">
+
+                        </div>
+                    </a>
+                    <a href="#" class="wrap-wrap-usluga col-lg-4 col-md-4 col-sm-6">
+                        <div class="wrap-usluga">
+                            <div class="number-usluga">
+                                04
+                            </div>
+                            <div class="wrap-img-usluga">
+                                <img src="img/uslugi4.png" alt="usluga1">
+                            </div>
+                        </div>
+                        <p class="title-usluga">
+                            Сборка водомерных узлов учета
+                        </p>
+                        <div class="circle-title">
+
+                        </div>
+                    </a>
+                    <a href="#" class="wrap-wrap-usluga col-lg-4 col-md-4 col-sm-6">
+                        <div class="wrap-usluga">
+                            <div class="number-usluga">
+                                05
+                            </div>
+                            <div class="wrap-img-usluga">
+                                <img src="img/uslugi5.png" alt="usluga1">
+                            </div>
+                        </div>
+                        <p class="title-usluga">
+                            Земляные работы
+                        </p>
+                        <div class="circle-title">
+
+                        </div>
+                    </a>
+                    <a href="#" class="wrap-wrap-usluga col-lg-4 col-md-4 col-sm-6">
+                        <div class="wrap-usluga">
+                            <div class="number-usluga">
+                                06
+                            </div>
+                            <div class="wrap-img-usluga">
+                                <img src="img/uslugi6.png" alt="usluga1">
+                            </div>
+                        </div>
+                        <p class="title-usluga">
+                            Монтаж очистных сооружений и насосных станций
+                        </p>
+                        <div class="circle-title">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrap-question">
+        <div class="w-question">
+            <div class="question">
+                <h2>Остались вопросы?</h2>
+                <h3>Закажите обратный звонок и мы с радостью Вас проконсультируем</h3>
+                <div class="more-question">
+                    <a href="#form" class="popup-free">Обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rent-technology">
+        <div class="container">
+            <div class="row">
+                <div class="title-section">
+                    <h1>аренда техники</h1>
+                </div>
+                <div class="wrap-technology">
+                    <div class="w-technology col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="technology">
+                            <div class="img-technology">
+                                <img src="img/tehnika1.png" alt="technika">
+                            </div>
+                            <p class="title-usluga t-technology">
+                                Аренда Автокрана
+                            </p>
+                        </a>
+                    </div>
+                    <div class="w-technology col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="technology">
+                            <div class="img-technology">
+                                <img src="img/tehnika2.png" alt="technika">
+                            </div>
+                            <p class="title-usluga t-technology">
+                                Аренда Экскаватор-погружчика
+                            </p>
+                        </a>
+                    </div>
+                    <div class="w-technology col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="" class="technology">
+                            <div class="img-technology">
+                                <img src="img/tehnika3.png" alt="technika">
+                            </div>
+                            <p class="title-usluga t-technology">
+                                Аренда Автовышки
+                            </p>
+                        </a>
+                    </div>
+                    <div class="w-technology col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <a href="#" class="technology">
+                            <div class="img-technology">
+                                <img src="img/tehnika4.png" alt="technika">
+                            </div>
+                            <p class="title-usluga t-technology">
+                                Аренда Самосвала
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="bottom-text-technology">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="title-section">
+                    <h1>наши проекты</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="masonry-container">
+                    <div class="grid-sizer"></div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom1.png" alt="alt">
+                        </div>
+                        <a href="#form1" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom2.png" alt="alt">
+                        </div>
+                        <a href="#form2" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom3.png" alt="alt">
+                        </div>
+                        <a href="#form3" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom4.png" alt="alt">
+                        </div>
+                        <a href="#form4" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom5.png" alt="alt">
+                        </div>
+                        <a href="#form5" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom6.png" alt="alt">
+                        </div>
+                        <a href="#form6" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom7.png" alt="alt">
+                        </div>
+                        <a href="#form7" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom8.png" alt="alt">
+                        </div>
+                        <a href="#form8" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom9.png" alt="alt">
+                        </div>
+                        <a href="#form9" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="col-lg-five col-md-3 col-sm-4 col-xs-6 item">
+                        <div class="img_wrap">
+                            <img src="img/dom10.png" alt="alt">
+                        </div>
+                        <a href="#form10" class="port_item_cont popup-free">
+                            <h3>Загородный дом</h3>
+                            <div class="after-port"></div>
+                            <p>г.Москва</p>
+                            <p>15.01.2017</p>
+                            <img src="img/fa-ss.png" class="ffss" alt="zoom">
+                        </a>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form1" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form2" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form3" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form4" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form5" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form6" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form7" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form8" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form9" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-popup-form">
+                        <div id="form10" class="form-popup-decor popup_house">
+                            <h2>
+                                загородный дом
+                            </h2>
+                            <div class="line-title-popup"></div>
+                            <div class="text-popup-dom">
+                                Город: Москва <span>Дата завершения: 1.02.2017</span>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                            <div class="wis-popup">
+                                <div>
+                                    <img src="img/big-dom2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/big-house.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-question mq-dom">
+            <a href="#">Смотреть все</a>
+        </div>
+    </section>
+    <section class="wrap-question wrap-discuss-terms">
+        <div class="w-question">
+            <div class="question q-terms">
+                <h2>Хотите обсудить условия сотрудничества?</h2>
+                <h3>Закажите обратный звонок и мы с радостью Вас проконсультируем</h3>
+                <div class="more-question mq-terms">
+                    <a href="#form" class="popup-free">Отправить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="wrap-map">
+            <div id="map_canvas" style="height:422px"></div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 logo-footer m-footer">
+                    <img src="img/footer-logo.png" alt="footer-logo">
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 m-footer">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Главная</a>
+                            </li>
+                            <li><a href="about-company.html">О компании</a>
+                            </li>
+                            <li><a href="uslugi.html">Услуги</a>
+                            </li>
+                            <li><a href="project.html">Проекты</a>
+                            </li>
+                            <li><a href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 m-footer">
+                    <div class="communication-footer">
+                        <p class="adress-footer">Адрес: г. Москва, Кутузовский проспект, 33</p>
+                        <div class="telephone">
+                            Тел.:
+                        </div>
+                        <div class="tel-num">
+                            <p>+7 965 77 77 777</p>
+                            <p>+7 965 77 77 777</p>
+                        </div>
+                        <div class="email-footer">E-mail: constructionmax@gmail.com</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12 m-footer">
+                    <div class="social-footer">
+                        <div class="container">
+                            <div class="row">
+                                <ul>
+                                    <li>
+                                        <a href="https://vk.com" class="vk" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/" class="facebook" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" class="instagram" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" class="twitter" target="_blank"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+    <script src="libs/jquery/jquery-2.1.3.min.js"></script>
+    <script src="libs/parallax/parallax.min.js"></script>
+    <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="libs/mixitup/mixitup.min.js"></script>
+    <script src="libs/scroll2id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/animate/animate-css.js"></script>
+    <script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+    <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="libs/imagefill/jquery-imagefill.js"></script>
+    <script src="libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="js/common.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter -->
+    <!-- /Google Analytics counter -->
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Заголовок</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="area.size" content="width=100%,height=100%">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript">
+        function initialize() {
+            var latlng = new google.maps.LatLng(55.741419, 37.5405201);
+            var settings = {
+                scrollwheel: false,
+                zoom: 17,
+                center: latlng,
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+                },
+                navigationControl: true,
+                navigationControlOptions: {
+                    style: google.maps.NavigationControlStyle.SMALL
+                },
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                settings);
+            var companyPos = new google.maps.LatLng(55.741419, 37.5405201);
+            var companyMarker = new google.maps.Marker({
+                position: companyPos,
+                map: map,
+                title: "Some title"
+            });
+        }
+    </script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body onload="initialize()">
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <div class="wrapper">
+        <div class="wrap-section">
+            <header class="head-about-company">
+                <div class="social-wrap sw-about">
+                    <div class="container">
+                        <div class="row">
+                            <ul>
+                                <li>
+                                    <a href="https://vk.com" class="vk" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" class="facebook" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" class="instagram" target="_blank"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" class="twitter" target="_blank"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="menu-line ml-about">
+                            <div class="logotip logo-about">
+                            <a href="index.html">
+                                <img src="img/logo-max.png" alt="logotip">
+                                </a>
+                            </div>
+                            <div class="navigation-panel">
+                                <a href="#" class="toggle-mnu"><span></span></a>
+                                <nav class="navigation-menu nav-menu-about hiden">
+                                    <ul>
+                                        <li><a href="index.html">Главная</a>
+                                        </li>
+                                        <li class="active-menu"><a href="about-company.html">О компании</a>
+                                        </li>
+                                        <li><a href="uslugi.html">Услуги</a>
+                                        </li>
+                                        <li><a href="project.html">Проекты</a>
+                                        </li>
+                                        <li><a href="contacts.html">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <nav class="navigation-menu mobile">
+                                    <ul>
+                                        <li><a href="index.html">Главная</a>
+                                        </li>
+                                        <li class="active-menu"><a href="about-company.html">О компании</a>
+                                        </li>
+                                        <li><a href="uslugi.html">Услуги</a>
+                                        </li>
+                                        <li><a href="project.html">Проекты</a>
+                                        </li>
+                                        <li><a href="contacts.html">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="search-icon si-about">
+                                    <a href="#" class="search2">
+                                        <img src="img/search-icon.png" alt="search">
+                                    </a>
+                                    <div class="login-content2 si_black">
+                                        <form name="loginform">
+                                            <input type="search" name="s" placeholder="Поиск..." required>
+                                            <input type="submit" value="Найти">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="about-company ac-about-company" id="s_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="title-section">
+                            <h1>о компании</h1>
+                        </div>
+                        <div class="content-section-about-company">
+                            <div class="img-about-company">
+                                <div class="frame-img"></div>
+                                <div class="block-img">
+                                    <img src="img/about-pics.png" alt="about-pics">
+                                </div>
+                            </div>
+                            <div class="text-about-company tac-about-company">
+                                <p><span>Строительная компания «Max»</span> создана группой единомышленников, имеющих за плечами богатый опыт работы, полученный в ходе реализации различных проектов. компания осуществляет поставки материалов крупнейшим строительным фирмам Москвы и Московской области, имеет контракты со многими заводами на территории Российской Федерации и Республики Беларусь.
+                                </p>
+                                <p><span>Отдельное направление работы – девелоперские проекты.</span> “Max” обладает несколькими собственными инвестиционными проектами, а также осуществляет управление проектами на юге, западе, северо-западе и севере Московской области. В портфеле компании имеется множество земельных участков под строительство многоэтажных жилых домов, а также подходящих для малоэтажного и индивидуального жилищного строительства.
+                                </p>
+                                <p>
+                                    С момента образования ООО СК «Max» начало активную деятельность, были заключены подрядные контракты с рядом российских и международный компаний, набран штат профессиональных сотрудников. На сегодняшний день в штате компании состоит около 350 квалифицированных работников.
+                                </p>
+                                <p>
+                                    Руководящий состав организации имеет необходимое строительное образование, подтвержденное документами государственного образца, а также многолетий практический опыт в строительстве.
+
+                                </p>
+                                <p>
+                                    Заказчиками ООО СК «Max» выступают крупные российские и мировые компании, среди которых ООО «ЛСР.Строй-М» («Группа ЛСР»), ЗАО «ЛСР.Недвижимость-М» («Группа ЛСР»), ООО «Келлер Раша» (Keller Group Plc), ЗАО «Ведис - Строительный Контроль» («Ведис Групп»), ООО «Южный Водоканал» (Coalco Development), ОАО «Завод Железобетонных Изделий -6», ООО «Стандарт Систем Билдинг» и иные.
+                                </p>
+                                <p>
+                                    ООО СК «Max» за время своего существования зарекомендовало себя как надежный и долгосрочный партнер. Компания на деле продемонстрировала качество выполняемых работ в минимальные сроки. Ведутся переговоры по заключению новых контрактов на производство земляных, бетонных, дорожных, общестроительных и иных работ.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-img-slide">
+                            <div>
+                                <img src="img/slide-img1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-img2.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-img3.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-img-4.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-img1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-img2.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-img3.png" alt="">
+                            </div>
+                            <div>
+                                <img src="img/slide-img-4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="files-download">
+                            <h3 class="title-download">
+                                Файлы для скачивания
+                            </h3>
+                            <div class="download">
+                                <p class="file-download">
+                                    Отчет.docx
+                                </p>
+                                <p class="data-download">
+                                    Добавлено 12/01/16 в 17:36
+                                </p>
+                                <a href="#" class="f-download" download>
+                                    Скачать
+                                </a>
+                            </div>
+                            <div class="download">
+                                <p class="file-download">
+                                    Отчет.docx
+                                </p>
+                                <p class="data-download">
+                                    Добавлено 12/01/16 в 17:36
+                                </p>
+                                <a href="#" class="f-download" download>
+                                    Скачать
+                                </a>
+                            </div>
+                            <div class="download">
+                                <p class="file-download">
+                                    Отчет.docx
+                                </p>
+                                <p class="data-download">
+                                    Добавлено 12/01/16 в 17:36
+                                </p>
+                                <a href="#" class="f-download" download>
+                                    Скачать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="map">
+                <div class="wrap-map">
+                    <div id="map_canvas" style="height:422px"></div>
+                </div>
+            </section>
+        </div>
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 logo-footer m-footer">
+                        <img src="img/footer-logo.png" alt="footer-logo">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 m-footer">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="index.html">Главная</a>
+                                </li>
+                                <li><a href="about-company.html">О компании</a>
+                                </li>
+                                <li><a href="uslugi.html">Услуги</a>
+                                </li>
+                                <li><a href="project.html">Проекты</a>
+                                </li>
+                                <li><a href="contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 m-footer">
+                        <div class="communication-footer">
+                            <p class="adress-footer">Адрес: г. Москва, Кутузовский проспект, 33</p>
+                            <div class="telephone">
+                                Тел.:
+                            </div>
+                            <div class="tel-num">
+                                <p>+7 965 77 77 777</p>
+                                <p>+7 965 77 77 777</p>
+                            </div>
+                            <div class="email-footer">E-mail: constructionmax@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12 m-footer">
+                        <div class="social-footer">
+                            <div class="container">
+                                <div class="row">
+                                    <ul>
+                                        <li>
+                                            <a href="https://vk.com" class="vk" target="_blank"></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/" class="facebook" target="_blank"></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" class="instagram" target="_blank"></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/" class="twitter" target="_blank"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+    <script src="libs/jquery/jquery-2.1.3.min.js"></script>
+    <script src="libs/parallax/parallax.min.js"></script>
+    <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="libs/mixitup/mixitup.min.js"></script>
+    <script src="libs/scroll2id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="libs/waypoints/waypoints.min.js"></script>
+    <script src="libs/animate/animate-css.js"></script>
+    <script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+    <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="libs/imagefill/jquery-imagefill.js"></script>
+    <script src="libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/slick-settings.js"></script>
+    <script src="js/common.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter -->
+    <!-- /Google Analytics counter -->
+</body>
+
+</html>
