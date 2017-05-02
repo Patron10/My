@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Заголовок</title>
+    <!--	режим отображения страниц в браузерах IE-edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--	режим отображения страниц в браузерах IE-edge-->
+    <!--    для работы адаптива-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--    для работы адаптива-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper_four">
+        <div class="wrap_opacity">
+            <header class="h_page_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="logotip l_page_1">
+                            <img src="img/logotip.png" alt="logotip">
+                        </div>
+                        <div class="header_contact hc_page_1">
+                            <p>8 (495) 178-00-45</p>
+                            <p>design.tesoricasa@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <p class="title_guide tg_page_1">
+                            Полный цикл работ, от согласования до 3D-проектирования и воплощения, а так же все виды ремонтных и отделочных работ, подбор мебели и текстиля
+                            <p class="number_question nq_page_1">
+                                Вопрос 3 из 10
+                            </p>
+                            <p class="title_question tq_page">
+                                В каком месте находится объект?</p>
+                            <form class="form_page3">
+                                <div class="check_question">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 radio">
+                                        <input id="moscow" type="radio" name="Местонахождение объекта" value="Москва">
+                                        <label for="moscow" onclick="window.location.href='page4.html'">Москва</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 radio">
+                                        <input id="remote" type="radio" name="Местонахождение объекта" value="Удаленное проектирование">
+                                        <label for="remote" onclick="window.location.href='page4.html'">Удаленное проектирование</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 radio">
+                                        <input id="moscowobl" type="radio" name="Местонахождение объекта" value="Московская область">
+                                        <label for="moscowobl" onclick="window.location.href='page4.html'">Московская область</label>
+                                    </div>
+                                </div>
+                                <div class="check_question cq_bottom">
+                                    <p class="title_check_question">
+                                        Что нужно учесть перед началом строительства?</p>
+                                    <p class="title_feedback">
+                                        Получите консультацию дизайнера. Оставьте имя и телефон и мы перезвоним вам
+                                    </p>
+                                    <div class="form_feedback">
+                                        <!-- Hidden Required Fields -->
+                                        <input type="hidden" name="project_name" value="page3">
+                                        <input type="hidden" name="admin_email" value="tesorileon@yandex.ua">
+                                        <input type="hidden" name="form_subject" value="Hello">
+                                        <!-- END Hidden Required Fields -->
+                                        <input type="text" name="Имя" placeholder="Имя">
+                                        <input type="tel" name="Телефон" placeholder="Телефон">
+                                        <input type="submit" value="отправить">
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

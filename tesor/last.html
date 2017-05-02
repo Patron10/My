@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Заголовок</title>
+    <!--	режим отображения страниц в браузерах IE-edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--	режим отображения страниц в браузерах IE-edge-->
+    <!--    для работы адаптива-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--    карта-->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <!--    для работы адаптива-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initialize()">
+    <div class="wrapper_last">
+        <div class="wrap_opacity">
+            <header class="h_last">
+                <div class="container">
+                    <div class="row">
+                        <div class="logotip">
+                            <img src="img/logotip.png" alt="logotip">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="last_section">
+                <div class="container">
+                    <div class="row">
+                        <p class="title_guide">
+                            Благодарим Вас за ответы. Оставьте свое имя, адрес электронной почты и номер телефона и мы закрепим за вами персональную скидку 20 000 руб. Внимание! Скидка действительна в течении 7 дней. Проверьте свою почту и получите:
+                        </p>
+                        <div class="question_guide">
+                            <div class="wrap_get wg_last">
+                                <div class="get">
+                                    <div class="number_get">
+                                        1
+                                    </div>
+                                    <div class="text_get">
+                                        Подборку по стилю и цвету которая подходит вам
+                                    </div>
+                                </div>
+                                <div class="get">
+                                    <div class="number_get">
+                                        2
+                                    </div>
+                                    <div class="text_get">
+                                        Сметную стоимость строительных работ (без учета отделочных материалов)
+                                    </div>
+                                </div>
+                                <div class="get">
+                                    <div class="number_get">
+                                        3
+                                    </div>
+                                    <div class="text_get">
+                                        Подарок за экономию нашего времени *
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check_question cq_bottom col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="form_feedback ff_last">
+                                <form class="form_last">
+                                   <!-- Hidden Required Fields -->
+                                        <input type="hidden" name="project_name" value="last">
+                                        <input type="hidden" name="admin_email" value="tesorileon@yandex.ua">
+                                        <input type="hidden" name="form_subject" value="Hello">
+                                        <!-- END Hidden Required Fields -->
+                                    <input type="text" name="Name" placeholder="Имя" required>
+                                    <input type="email" name="Email" placeholder="Почта" required>
+                                    <input type="tel" name="Number" placeholder="Телефон" required>
+                                    <input type="submit" value="отправить">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 map">
+                            <div class="addres_map">
+                                <p class="text_map">
+                                    <span>Москва</span>
+                                    <span>Ул. Смоленская д. 10</span>
+                                </p>
+                                <p class="text_map">
+                                    TESORI CASA
+                                </p>
+                                <p class="text_map">
+                                    8 (495) 178-00-45
+                                </p>
+                                <p class="text_map">
+                                    design.tesoricasa@gmail.com
+                                </p>
+                            </div>
+                            <div id="map_canvas" style="height: 329px"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+   <script type="text/javascript">
+        function initialize() {
+            var latlng = new google.maps.LatLng(55.745949, 37.5747913);
+            var settings = {
+                zoom: 16,
+                center: latlng,
+                scrollwheel: false,
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+                },
+                navigationControl: true,
+                navigationControlOptions: {
+                    style: google.maps.NavigationControlStyle.SMALL
+                },
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("map_canvas"),
+                settings);
+            var companyLogo = new google.maps.MarkerImage('img/icon_map.png',
+                new google.maps.Size(42, 79),
+                new google.maps.Point(0, 0),
+                new google.maps.Point(60, 70)
+            );
+            var companyPos = new google.maps.LatLng(55.746028, 37.5780146);
+            var companyMarker = new google.maps.Marker({
+                position: companyPos,
+                map: map,
+                icon: companyLogo,
+                title: "Some title"
+            });
+        }
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Заголовок</title>
+    <!--	режим отображения страниц в браузерах IE-edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--	режим отображения страниц в браузерах IE-edge-->
+    <!--    для работы адаптива-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--    для работы адаптива-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper_three">
+        <div class="wrap_opacity">
+            <header class="h_page_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="logotip l_page_1">
+                            <img src="img/logotip.png" alt="logotip">
+                        </div>
+                        <div class="header_contact hc_page_1">
+                            <p>8 (495) 178-00-45</p>
+                            <p>design.tesoricasa@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <p class="title_guide tg_page_1">
+                            Мы берем на себя все, от разработки проекта и сбора всех документов, до получения разрешения и ввода в эксплуатацию</p>
+                        <p class="number_question nq_page_1">
+                            Вопрос 2 из 10
+                        </p>
+                        <p class="title_question tq_page">
+                            Количество квадратных метров?</p>
+                        <form class="form_page2">
+                            <div class="check_question">
+                                <div class="col-lg-6 col-md-6 col-sm-6 radio">
+                                    <input id="fivten" type="radio" name="Количество квадратных метров" value="до 50">
+                                    <label for="fivten" onclick="window.location.href='page3.html'">до 50</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 radio">
+                                    <input id="othungred" type="radio" name="Количество квадратных метров" value="от 100 до 250">
+                                    <label for="othungred" onclick="window.location.href='page3.html'">от 100 до 250</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 radio">
+                                    <input id="otfivten" type="radio" name="Количество квадратных метров" value="от 50 до 100">
+                                    <label for="otfivten" onclick="window.location.href='page3.html'">от 50 до 100</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 radio">
+                                    <input id="ottwohungred" type="radio" name="Количество квадратных метров" value="от 250">
+                                    <label for="ottwohungred" onclick="window.location.href='page3.html'">от 250</label>
+                                </div>
+                            </div>
+                            <div class="check_question cq_bottom">
+                                <p class="title_check_question">
+                                    Какие стены вы можете переносить?</p>
+                                <p class="title_feedback">
+                                    Получите консультацию инженера. Оставьте имя и телефон и мы перезвоним вам
+                                </p>
+                                <div class="form_feedback">
+                                    <!-- Hidden Required Fields -->
+                                    <input type="hidden" name="project_name" value="page2">
+                                    <input type="hidden" name="admin_email" value="tesorileon@yandex.ua">
+                                    <input type="hidden" name="form_subject" value="Hello">
+                                    <!-- END Hidden Required Fields -->
+                                    <input type="text" name="Имя" placeholder="Имя">
+                                    <input type="tel" name="Телефон" placeholder="Телефон">
+                                    <input type="submit" value="отправить">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
