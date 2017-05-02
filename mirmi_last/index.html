@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JC</title>
+    <!--	режим отображения страниц в браузерах IE-edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--	режим отображения страниц в браузерах IE-edge-->
+    <!--    для работы адаптива-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--    для работы адаптива-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap_container">
+            <div class="wrap_pice_container">
+                <div class="logo_menu">
+                    <a href="#" class="logotip">
+                        <div class="wrap_logo_img">
+                            <img src="img/test_logo.png" alt="">
+                        </div>
+                        <div class="text_logo">
+                            <span>ми&#8381;-ми</span>
+                            <span>Фирменный магазин Xiaomi</span>
+                        </div>
+                    </a>
+                    <div class="menu">
+                        <a class="toggle_mnu" href="#"><span></span></a>
+                    </div>
+                    <div class="navigation">
+                        <ul>
+                            <li><a href="#" class="logoti">В начало</a>
+                            </li>
+                            <li><a href="#s1">Почему Xiaomi?</a>
+                            </li>
+                            <li><a href="#s2">Возможности самоката</a>
+                            </li>
+                            <li><a href="#s3">Характеристики</a>
+                            </li>
+                            <li><a href="#s4">Способы доставки</a>
+                            </li>
+                            <li><a href="#s5">Пригодится в дороге</a>
+                            </li>
+                            <li><a href="#s6">Обзор самоката</a>
+                            </li>
+                            <li><a href="#s7">Гарантии качества</a>
+                            </li>
+                            <li><a href="#s8">Способы оплаты</a>
+                            </li>
+                            <li><a href="#s9">Сопутствующие товары</a>
+                            </li>
+                            <li><a href="#s10">Запросить каталог</a>
+                            </li>
+                            <li><a href="#s11">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="call_header">
+                    <a href="tel:+74951234567"><span>+7 (495) 123-45-67</span><img src="img/phone.svg" alt=""></a>
+                    <a href="#form_phone" class="popup_phone">Заказать обратный звонок</a>
+                </div>
+                <div class="hidden_popup_phone">
+                    <div class="popup_phone_form" id="form_phone">
+                        <div class="title_popup">
+                            Заказать обратный звонок
+                        </div>
+                        <form class="form_phone">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="mirmi.ru">
+                        
+                        <input type="hidden" name="form_subject" value="Заказать_обратный_звонок">
+                        <!-- END Hidden Required Fields -->
+                            <div class="input_block">
+                                <input type="text" name="Имя" id="name_input" required>
+                                <label for="name_input">
+                                    <span>Имя</span>
+                                </label>
+                            </div>
+                            <div class="input_block block_tel">
+                                <input type="tel" name="Телефон" id="tel_input" required>
+                                <label for="tel_input">
+                                    <span>Телефон</span>
+                                </label>
+                            </div>
+                            <input href="#sanks" class="sank" type="submit" value="Заказать">
+                        </form>
+                    </div>
+                </div>
+                <div class="hidden_popup_phone">
+                    <div class="popup_phone_form" id="form_consultation">
+                        <div class="title_popup">
+                            Консультация по продукции
+                        </div>
+                        <form class="form_consultation">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="mirmi.ru">
+                        
+                        <input type="hidden" name="form_subject" value="Консультация_продукции">
+                        <!-- END Hidden Required Fields -->
+                            <div class="input_block">
+                                <input type="text" name="Имя" id="name_input" required>
+                                <label for="name_input">
+                                    <span>Имя</span>
+                                </label>
+                            </div>
+                            <div class="input_block block_tel">
+                                <input type="tel" name="Телефон" id="tel_input" required>
+                                <label for="tel_input">
+                                    <span>Телефон</span>
+                                </label>
+                            </div>
+                            <input href="#sanks" class="sank" type="submit" value="Заказать">
+                        </form>
+                    </div>
+                </div>
+                <div class="hidden_popup_phone">
+                    <div class="popup_phone_form" id="form_catalog">
+                        <div class="title_popup">
+                            Каталог продукции Xiaomi
+                        </div>
+                        <p class="text_catalog_production">
+                            Укажите свои контактные данные и мы вышлем вам каталог с ценами.
+                        </p>
+                        <form class="form_catalog">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="mirmi.ru">
+                        
+                        <input type="hidden" name="form_subject" value="Каталог_продукции_Xiaomi_без_оптового_прайс_листа">
+                        <!-- END Hidden Required Fields -->
+                            <div class="input_block">
+                                <input type="text" name="Имя" id="name_input">
+                                <label for="name_input">
+                                    <span>Имя</span>
+                                </label>
+                            </div>
+                            <div class="input_block block_tel">
+                                <input type="tel" name="Телефон" id="name_tel">
+                                <label for="name_tel">
+                                    <span>Телефон</span>
+                                </label>
+                            </div>
+                            <div class="input_block">
+                                <input type="email" name="Почта" id="name_email">
+                                <label for="name_email">
+                                    <span>Адрес эл. почты</span>
+                                </label>
+                            </div>
+                            <input type="checkbox" id="check1" name="Оптовый прайс лист" value="No">
+                            <label class="check1" for="check1">Оптовый прайс лист</label>
+
+                            <input href="#sanks" class="sank" type="submit" value="Заказать">
+                        </form>
+                    </div>
+                </div>
+                <div class="hidden_popup_phone">
+                    <div class="popup_phone_form" id="form_catalog_checked">
+                        <div class="title_popup">
+                            Каталог продукции Xiaomi
+                        </div>
+                        <p class="text_catalog_production">
+                            Укажите свои контактные данные и мы вышлем вам каталог с ценами.
+                        </p>
+                        <form class="form_catalog_checked">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="mirmi.ru">
+                        <input type="hidden" name="form_subject" value="Каталог_продукции_Xiaomi_с_оптовым_прайс_листом">
+                        <!-- END Hidden Required Fields -->
+                            <div class="input_block">
+                                <input type="text" name="имя" id="name_input" required>
+                                <label for="name_input">
+                                    <span>Имя</span>
+                                </label>
+                            </div>
+                            <div class="input_block block_tel">
+                                <input type="tel" name="Телефон" id="name_tel" required>
+                                <label for="name_tel">
+                                    <span>Телефон</span>
+                                </label>
+                            </div>
+                            <div class="input_block">
+                                <input type="email" name="Почта" id="name_email" required>
+                                <label for="name_email">
+                                    <span>Адрес эл. почты</span>
+                                </label>
+                            </div>
+                            <input type="checkbox" id="check2" checked name="Оптовый прайс лист" value="Да">
+                            <label class="check1" for="check2">Оптовый прайс лист</label>
+
+                            <input href="#sanks" class="sank" type="submit" value="Заказать">
+                        </form>
+                    </div>
+                </div>
+                <div class="city_basket">
+                    <div class="city">
+                        <a href="#" class="your_city" id="your_city">Москва</a>
+                        <div class="your_city_popup">
+                            <p class="title_your_city">Ваш город Москва?</p>
+                            <div class="wrap_otvet">
+                                <span class="active_otvet">Да</span><a href="#" class="no">Нет</a>
+                            </div>
+                        </div>
+                        <div class="yc_popup">
+                            <p class="title_your_city">Выбор города:</p>
+                            <input class="tags" id="tags" list="list1">
+                            <button class="get_city" onclick="geo()"><img src="img/search.png" alt=""></button>
+                            <datalist id="list1">
+      <option value="Абакан">
+   <option value="Алматы">
+  <option value="Анапа">
+   <option value="Архангельск">
+   <option value="Астана">
+   <option value="Астрахань">
+    <option value="Атырау">
+   <option value="Барнаул">
+  <option value="Белгород">
+  <option value="Бишкек">
+ <option value="Великий Новгород">
+<option value="Владивосток">
+<option value="Владимир">
+<option value="Волгоград">
+<option value="Волжский">
+<option value="Воронеж">
+   <option value="Евпатория">
+<option value="Екатеринбург">
+ <option value="Иваново">
+ <option value="Ижевск">
+ <option value="Иркутск">
+<option value="Казань">
+<option value="Калининград">
+<option value="Калуга">
+<option value="Караганда">
+ <option value="Кемерово">
+<option value="Киров">
+ <option value="Кострома">
+ <option value="Краснодар">
+<option value="Красноярск">
+ <option value="Курган">
+<option value="Курск">
+<option value="Липетск">
+<option value="Магадан">
+<option value="Магнитогорск">
+<option value="Махачкала">
+<option value="Минск">
+ <option value="Москва">
+<option value="Набережные Челны">
+ <option value="Невинномысск">
+<option value="Нижневартовск">
+<option value="Нижний Новгород">
+<option value="Нижний Тагил">
+ <option value="Новокузнецк">
+<option value="Новороссийск">
+<option value="Новосибирск">
+<option value="Новый Уренгой">
+<option value="Октябрский">
+<option value="Омск">
+<option value="Орел">
+<option value="Оренбург">
+<option value="Пенза">
+<option value="Перьм">
+<option value="Пятигорск">
+ <option value="Ростов-на-Дону">
+<option value="Рязань">
+ <option value="Самара">
+<option value="Санкт-Петербург">
+<option value="Саранск">
+<option value="Саратов">
+<option value="Севастополь">
+<option value="Симферополь">
+ <option value="Смоленск">
+<option value="Сочи">
+<option value="Ставрополь">
+<option value="Стерлитамак">
+ <option value="Сургут">
+ <option value="Сыктывкар">
+ <option value="Сызрань">
+ <option value="Тверь">
+ <option value="Темрюк">
+<option value="Тольятти">
+<option value="Томск">
+<option value="Тула">
+<option value="Тюмень">
+<option value="Ульяновск">
+<option value="Уфа">
+<option value="Феодосия">
+<option value="Хабаровск">
+<option value="Чебоксары">
+<option value="Челябинск">
+<option value="Ярославль">
+<option value="Березники">
+<option value="Балаково">
+<option value="Йошкар-Ола">
+<option value="Брянск">
+<option value="Тамбов">
+<option value="Элиста">
+<option value="Нальчик">
+<option value="Владикавказ">
+<option value="Рыбинск">
+<option value="Псков">
+<option value="Волгодонск">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="price_basket">
+                        <div class="price">
+                            
+                        </div>
+                        <a href="#" class="basket cart-button">
+                            <span class="cart-button-quantity"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrap_ba">
+        <div class="baa">
+            <div class="ba">
+                <div class="tab_content">
+                    <div class="tab_wr">
+                        <div class="tab_item">
+                            <video src="img/xiaomiScooter-DASH.mp4" autoplay loop></video>
+                        </div>
+                        <div class="tab_item">
+                            <video src="img/xiaomiScooter-DASH.mp4" autoplay loop></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="text_ba">
+                    <div class="text_samokat">
+                        <p>Электросамокат Xiaomi</p>
+                        <p>Mijia Electric Scooter</p>
+                    </div>
+                    <div class="color_bike_video">
+                        <span class="tab">Белый</span>
+                        <span class="tab">Черный</span>
+                    </div>
+                </div>
+                <div class="bottom_text_ba">
+                    <p>29 999 &#8381;</p>
+                    <a href="#" class="cart-buy-button" data-name="Электросамокат Xiaomi
+Mijia Electric Scooter" data-price="29999" data-quantity="1">Заказать</a>
+                </div>
+                <!-- <div class="hidden_popup_zakaz">
+                    <div class="popup_zakaz_form" id="form_zakaz">
+                        <div class="title_popup">
+                            Оформить заказ
+                        </div>
+                        <form id="form_tovar">
+                        <div class="wrap_wrap_naime">
+                        <div class="wrap_naime">
+                            <div class="naime">
+                                <label for="naime_name">Наименование</label>
+                                <input type="text" value="Электроскутер Xiaomi Mijia Electric Scooter" id="naime_name" required>
+                            </div>
+                            <div class="naime wrap_select">
+                                <label for="naime_color">Цвет</label>
+                                <select name="" id="naime_color" size="1">
+                                    <option value="">Серебряный</option>
+                                    <option value="">Белый</option>
+                                    <option value="">Серый</option>
+                                </select>
+                            </div>
+                            <div class="naime plus_minus">
+                                <label for="naime_number">Кол-во</label>
+                                <input type="number" min="1" id="naime_number" value="1" step="1">
+
+                            </div>
+                            </div>
+                            </div>
+                            <div class="plus_naime">+ Добавить наименование</div>
+                            <div class="naime">
+                                <label for="naime_name">ФИО</label>
+                                <input type="text" placeholder="Имя" id="naime_name" required>
+                            </div>
+                            <div class="naime">
+                                <label for="naime_name">Телефон</label>
+                                <input type="tel" placeholder="777 777" id="naime_name" required>
+                            </div>
+                            <div class="price_zakaz">59 998 &#8381;</div>
+                            <input href="#sanks" class="sank" type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </div> -->
+                <div class="hidden_popup_sanks">
+                    <div class="popup_sanks" id="sanks">
+                        <div class="title_sanks">Заказ принят!</div>
+                        <p>
+                            <span>Благодарим Вас за заказ!</span>
+                            В течении нескольких минут с Вами свяжется наш менеджер и закончит оформление заказа!
+                        </p>
+                        <button title="Close (Esc)" type="button" class="button_sank">Спасибо</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrap_wy_xiomi" id="s1">
+                <div class="title_wy_xiaomi">
+                    Почему Xiaomi?
+                </div>
+                <div class="wrap_img_wy_xiomi wow fadeInLeft" data-wow-offset='150'>
+                    <div class="w_img_wy_xiomi">
+                        <img src="img/wy_xiomi.png" alt="">
+                    </div>
+                </div>
+                <div class="text_wy_xiomi wow fadeInRight" data-wow-offset='150'>
+                    <p>Продукция Xiaomi за последние шесть лет стала брендом мировой известности. В своей деятельности китайская компания достигла умопомрачительных успехов. Миллионы поклонников по всему миру!
+                    </p>
+                    <p>
+                        Все производимые товары Xiaomi отличаются качеством и надежностью, высокой технологичностью, стильными дизайнерскими решениями и доступностью цены что в наше время очень важно для ценителей "умной" техники.
+                    </p>
+                    <p>
+                        Xiaomi выпускает огромный ассортимент товаров, что позволяет удовлетворить самых изысканных покупателей:
+                    </p>
+                    <p>
+                        Смартфоны, гарнитуры, планшеты, ноутбуки, аксессуары для мобильных телефонов и компьютеров, различные гаджеты, портативные зарядные и аудио устройства, бытовую технику и многое другое!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_bez_graniz" id="s2">
+        <div class="title_block">
+            Передвижение без границ
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="list_icon_graniz">
+                    <ul>
+                        <li class="wow fadeInDown" data-wow-delay="0.2s">
+                            <img src="img/clock.svg" alt="">Подготовка к поездке 3 сек.</li>
+                        <li class="wow fadeInDown" data-wow-delay="0.3s">
+                            <img src="img/energy.svg" alt="">Подзарядка во время езды</li>
+                        <li class="wow fadeInDown" data-wow-delay="0.4s">
+                            <img src="img/compas.svg" alt="">Радиус колёс 8,5 дюймов</li>
+                        <li class="wow fadeInDown" data-wow-delay="0.5s">
+                            <img src="img/doroga.svg" alt="">Дальность хода 30 км</li>
+                        <li class="wow fadeInDown" data-wow-delay="0.2s">
+                            <img src="img/temperature.svg" alt="">Защита от перегрева</li>
+                        <li class="wow fadeInDown" data-wow-delay="0.3s">
+                            <img src="img/metal.svg" alt="">Масса 12,5 кг</li>
+                        <li class="wow fadeInDown" data-wow-delay="0.4s">
+                            <img src="img/speed.svg" alt="">Предельная скорость 25 км/ч</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_scooter_characteristics" id="s3">
+        <div class="title_block">
+            Характеристики электросамоката
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="wrap_slider wow zoomIn" data-wow-offset='200'>
+                    <div class="slider_characteristics">
+                        <div class="characteristics">
+                            <div class="left_char">
+                                <p>Размер в сложенном состоянии:</p>
+                                <p>Высота шасси:</p>
+                                <p>Вес:</p>
+                                <p>Материал корпуса:</p>
+                            </div>
+                            <div class="right_char">
+                                <p>490 х 1080 мм</p>
+                                <p>87,5 мм</p>
+                                <p>12,5 кг</p>
+                                <p>Алюминиевый сплав</p>
+                            </div>
+                        </div>
+                        <div class="wrap_wrap_img_scooter slide_not_border">
+                            <div class="wrap_img_scooter">
+                                <div class="img_scooter">
+                                    <span class="tab_item2"><img src="img/slide1_1.png" alt=""></span>
+                                    <span class="tab_item2"><img src="img/slide1_2.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="color_bike_pics">
+                                <span class="tab2">Белый</span>
+                                <span class="tab2">Черный</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_characteristics">
+                        <div class="characteristics">
+                            <div class="left_char">
+                                <p>Размер в разложенном состоянии:</p>
+                                <p>Оптимальная высота:</p>
+                                <p>Максимальная нагрузка:</p>
+                            </div>
+                            <div class="right_char">
+                                <p>1140х1080 мм</p>
+                                <p>1200 ~ 2000 мм</p>
+                                <p>100 кг</p>
+                            </div>
+                        </div>
+                        <div class="wrap_wrap_img_scooter slide_not_border1">
+                            <div class="wrap_img_scooter">
+                                <div class="img_scooter">
+                                    <span class="tab_item2"><img src="img/slide2_1.png" alt=""></span>
+                                    <span class="tab_item2"><img src="img/slide2_2.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="color_bike_pics">
+                                <span class="tab2">Белый</span>
+                                <span class="tab2">Черный</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_characteristics">
+                        <div class="characteristics">
+                            <div class="left_char">
+                                <p>Материал шин:</p>
+                                <p>Размер шин:</p>
+                                <p>Тормозной путь:</p>
+                                <p>Способ торможения:</p>
+                            </div>
+                            <div class="right_char">
+                                <p>Надувные резиновые шины</p>
+                                <p>21,60 см</p>
+                                <p>4 м</p>
+                                <p>Рекуперативное торможение
+                                    <br>дисковый тормоз</p>
+                            </div>
+                        </div>
+                        <div class="wrap_wrap_img_scooter top_img">
+                            <div class="wrap_img_scooter">
+                                <div class="img_scooter">
+                                    <span class="tab_item2"><img src="img/slide3_1.png" alt=""></span>
+                                    <span class="tab_item2"><img src="img/slide3_2.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="color_bike_pics">
+                                <span class="tab2">Белый</span>
+                                <span class="tab2">Черный</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_characteristics">
+                        <div class="characteristics">
+                            <div class="left_char">
+                                <p>Питание:</p>
+                                <p>Время зарядки:</p>
+                                <p>Степень защиты:</p>
+                                <p>Стандартное потребление:</p>
+                            </div>
+                            <div class="right_char">
+                                <p>Литиевые батареи 18650×30</p>
+                                <p>Около 5 часов</p>
+                                <p>IP54</p>
+                                <p>1,1 kВч</p>
+                            </div>
+                        </div>
+                        <div class="wrap_wrap_img_scooter">
+                            <div class="wrap_img_scooter">
+                                <div class="img_scooter">
+                                    <span class="tab_item2"><img src="img/slide4_1.png" alt=""></span>
+                                    <span class="tab_item2"><img src="img/slide4_2.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="color_bike_pics">
+                                <span class="tab2">Белый</span>
+                                <span class="tab2">Черный</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_characteristics">
+                        <div class="characteristics">
+                            <div class="left_char">
+                                <p>Размер двигателя:</p>
+                                <p>Максимальная скорость:</p>
+                                <p>Скорость в энергосберегающем режиме:</p>
+                                <p>Пробег:</p>
+                                <p>Крутящий момент:</p>
+                            </div>
+                            <div class="right_char">
+                                <p>15,20 см</p>
+                                <p>25 км / ч</p>
+                                <p>18км / ч</p>
+                                <p>30 км</p>
+                                <p>16 Nm</p>
+                            </div>
+                        </div>
+                        <div class="wrap_wrap_img_scooter">
+                            <div class="wrap_img_scooter">
+                                <div class="img_scooter">
+                                    <span class="tab_item2"><img src="img/scooter1.png" alt=""></span>
+                                    <span class="tab_item2"><img src="img/scooter3.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="color_bike_pics">
+                                <span class="tab2">Белый</span>
+                                <span class="tab2">Черный</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_characteristics">
+                        <div class="characteristics">
+                            <div class="left_char">
+                                <p>Переднее освещение:</p>
+                                <p>Заднее освещение:</p>
+                                <p>Номинальное напряжение зарядки:</p>
+                                <p>Номинальный вольтаж:</p>
+                                <p>Номинальное напряжение мотора:</p>
+                                <p>Предельное напряжение аккумулятора:</p>
+                            </div>
+                            <div class="right_char">
+                                <p>1,1 W лампы высокой яркости</p>
+                                <p>LED лампы</p>
+                                <p>71 W</p>
+                                <p>100-240V ~, 50 / 60Hz</p>
+                                <p>250 W</p>
+                                <p>42 V</p>
+                            </div>
+                        </div>
+                        <div class="wrap_wrap_img_scooter">
+                            <div class="wrap_img_scooter">
+                                <div class="img_scooter">
+                                    <span class="tab_item2"><img src="img/slide5.png" alt=""></span>
+                                    <span class="tab_item2"><img src="img/scooter3.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="color_bike_pics">
+                                <span class="tab2">Белый</span>
+                                <span class="tab2">Черный</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="popup_link" href="#form_consultation">
+Заказать консультацию
+</a>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_sposob" id="s4">
+        <div class="sposob">
+            <div class="title_block">
+                Способы доставки
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="list_icon_graniz list_icon_sposob">
+                        <ul>
+                            <li class="wow fadeInDown" data-wow-offset='50' data-wow-delay="0.2s">
+                                <img src="img/car_fast.svg" alt="">Подготовка к поездке 3 сек.</li>
+                            <li class="wow fadeInDown" data-wow-offset='50' data-wow-delay="0.3s">
+                                <img src="img/gerb.svg" alt="">Подзарядка во время езды</li>
+                            <li class="wow fadeInDown" data-wow-offset='50' data-wow-delay="0.4s">
+                                <img src="img/hand.svg" alt="">Радиус колёс 8,5 дюймов</li>
+                            <li class="wow fadeInDown" data-wow-offset='50' data-wow-delay="0.5s">
+                                <img src="img/car_house.svg" alt="">Дальность хода 30 км</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_wrap_vdoroge" id="s5">
+        <div class="wrap_vdoroge">
+            <div class="title_block">
+                Пригодится в дороге
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="wrap_vdorore_list">
+                        <ul>
+                            <li class="tovar_tovar">
+                                <div class="title_tovar_vdrorge">
+                                    <span>Портативный аккумуляторы</span>  <span>Xiaomi Power Bank 2 (10000 mAh)</span>
+                                </div>
+                                <div class="wrap_select">
+                                    <select name="" id="tovar1" size="1">
+                                        <option data-path="img/tovar1.png" value="1199">Серебряный</option>
+                                        <option data-path="img/tovar2.png" value="1399">Белый</option>
+                                        <option data-path="img/tovar3.png" value="1499">Серый</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_img_tovar tovar1">
+                                    <img src="img/tovar1.png" alt="">
+                                </div>
+                                <div class="price_tovar_vdoroge" id="tov1">
+                                    1199 <span>&#8381;</span>
+                                </div>
+                                <a href="#" class="cart-buy-button" data-name="Портативный аккумуляторы Xiaomi Power Bank 2 (10000 mAh)" data-price="1199" data-quantity="1">
+                                    <div class="zakaz icon_basket_tovar">
+                                        <img src="img/basket_down.svg" alt="">
+                                        <img src="img/hover_basket_tovar.svg" alt="">
+                                    </div>
+                                    <div class="zakaz zakaz_tovar">
+                                        Заказать
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tovar_tovar">
+                                <div class="title_tovar_vdrorge">
+                                    <span>Xiaomi Mi5</span>  <span>4GB/128GB Glass</span>
+                                </div>
+                                <div class="wrap_select">
+                                    <select name="" id="tovar2" size="1">
+                                        <option data-path="img/tovar2.png" value="23999">Белый</option>
+                                        <option data-path="img/tovar1.png" value="24999">Серебряный</option>
+                                        <option data-path="img/tovar3.png" value="25999">Серый</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_img_tovar tovar2">
+                                    <img src="img/tovar2.png" alt="">
+                                </div>
+                                <div class="price_tovar_vdoroge" id="tov2">
+                                    23999 <span>&#8381;</span>
+                                </div>
+                                <a href="#" class="cart-buy-button" data-name="Xiaomi Mi5 4GB/128GB Glass" data-price="23999" data-quantity="1">
+                                    <div class="zakaz icon_basket_tovar" data-id="2">
+                                        <img src="img/basket_down.svg" alt="">
+                                        <img src="img/hover_basket_tovar.svg" alt="">
+                                    </div>
+                                    <div class="zakaz zakaz_tovar">
+                                        Заказать
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tovar_tovar">
+                                <div class="title_tovar_vdrorge">
+                                    <span>Bluetooth колонка</span>  <span>Xiaomi Square Box</span>
+                                </div>
+                                <div class="wrap_select">
+                                    <select name="" id="tovar3" size="1">
+                                        <option data-path="img/tovar3.png" value="1450">Белый</option>
+                                        <option data-path="img/tovar1.png" value="1550">Серебряный</option>
+                                        <option data-path="img/tovar2.png" value="1650">Серый</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_img_tovar tovar3">
+                                    <img src="img/tovar3.png" alt="">
+                                </div>
+                                <div class="price_tovar_vdoroge" id="tov3">
+                                    1450 <span>&#8381;</span>
+                                </div>
+                                <a href="#" class="cart-buy-button" data-name="Bluetooth колонка Xiaomi Square Box" data-price="1450" data-quantity="1">
+                                    <div class="zakaz icon_basket_tovar" data-id="3">
+                                        <img src="img/basket_down.svg" alt="">
+                                        <img src="img/hover_basket_tovar.svg" alt="">
+                                    </div>
+                                    <div class="zakaz zakaz_tovar">
+                                        Заказать
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tovar_tovar">
+                                <div class="title_tovar_vdrorge">
+                                    <span>Рюкзак</span>  <span>Mi urban life stile</span>
+                                </div>
+                                <div class="wrap_select">
+                                    <select name="" id="tovar4" size="1">
+                                        <option data-path="img/tovar4.png" value="3000">Серый</option>
+                                        <option data-path="img/tovar3.png" value="3100">Серебряный</option>
+                                        <option data-path="img/tovar1.png" value="3200">Белый</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_img_tovar tovar4">
+                                    <img src="img/tovar4.png" alt="">
+                                </div>
+                                <div class="price_tovar_vdoroge" id="tov4">
+                                    3000 <span>&#8381;</span>
+                                </div>
+                                <a href="#" class="cart-buy-button" data-name="Рюкзак Mi urban life stile" data-price="3000" data-quantity="1">
+                                    <div class="zakaz icon_basket_tovar" data-id="4">
+                                        <img src="img/basket_down.svg" alt="">
+                                        <img src="img/hover_basket_tovar.svg" alt="">
+                                    </div>
+                                    <div class="zakaz zakaz_tovar">
+                                        Заказать
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_scooter_characteristics ws_characteristics" id="s6">
+        <div class="title_block">
+            Обзор самоката
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="wrap_slider">
+                    <div class="slider_characteristics">
+                        <video src="img/xiaomiScooter-DASH.mp4" controls></video>
+                    </div>
+                    <div class="slider_characteristics">
+                        <video src="img/xiaomiScooter-DASH.mp4" controls></video>
+                    </div>
+                </div>
+                <a class="popup_link" href="#form_consultation">
+Заказать консультацию
+ </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_garant" id="s7">
+        <div class="title_block">
+            Гарантия качества
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="wrap_info_garant">
+                    <div class="text_garant wow fadeInLeft" data-wow-offset='150'>
+                        <span>Мы работаем напрямую с китайскими партнерами, поэтому предлагаем только оригинальную продукцию! Наш статус позволяет сохранять самую
+выгодную цену на продукты фирмы Xiaomi.
+</span>
+ <span>
+Покупая продукцию Xiaomi в магазине "Мир Ми", Вы получите удовольствие от использования современных сервисов и технологий.
+</span>
+                        <span>Наша команда готова консультировать Вас и оказать помощь не только при выборе устройства, но и после покупки!</span> 
+                    </div>
+                    <div class="wrap_image_garant wow fadeInRight" data-wow-offset='150'>
+                        <div class="image_garant">
+                            <img src="img/img_garant.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_sposob ws_pay" id="s8">
+        <div class="sposob">
+            <div class="title_block">
+                Способы оплаты
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="list_icon_graniz list_icon_sposob">
+                        <ul>
+                            <li class="wow fadeInDown" data-wow-offset='50' data-wow-delay="0.2s">
+                                <img src="img/portmone.svg" alt="">Подготовка к поездке 3 сек.</li>
+                            <li class="wow fadeInDown" data-wow-offset='50' data-wow-delay="0.3s">
+                                <img src="img/card.svg" alt="">Подзарядка во время езды</li>
+                            <li class="wow fadeInDown" data-wow-offset='50' data-wow-delay="0.4s">
+                                <img src="img/dogovor.svg" alt="">Радиус колёс 8,5 дюймов</li>
+                            <li class="wow fadeInDown" data-wow-offset='50' data-wow-delay="0.5s">
+                                <img src="img/letter.svg" alt="">Дальность хода 30 км</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_wrap_vdoroge ww_buy" id="s9">
+        <div class="wrap_vdoroge">
+            <div class="title_block">
+                С самокатом покупают
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="wrap_vdorore_list">
+                        <ul>
+                            <li class="tovar_tovar">
+                                <div class="title_tovar_vdrorge">
+                                    <span>Наушники</span><span>Xiaomi 1More Voice of China</span>
+                                </div>
+                                <div class="wrap_select">
+                                    <select name="" id="tovar2_1" size="1">
+                                        <option data-path="img/pay1.png" value="1555">Серебряный</option>
+                                        <option data-path="img/pay2.png" value="1655">Белый</option>
+                                        <option data-path="img/pay3.png" value="1755">Серый</option>
+                                        <option data-path="img/pay4.png" value="1855">Черный</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_img_tovar tovar2_1">
+                                    <img src="img/pay1.png" alt="">
+                                </div>
+                                <div class="price_tovar_vdoroge" id="tov1_1">
+                                    1555 <span>&#8381;</span>
+                                </div>
+                                <a href="#"  class="cart-buy-button" data-name="Наушники Xiaomi 1More Voice of China" data-price="1555" data-quantity="1">
+                                    <div class="zakaz icon_basket_tovar">
+                                        <img src="img/basket_down.svg" alt="">
+                                        <img src="img/hover_basket_tovar.svg" alt="">
+                                    </div>
+                                    <div href="#form_zakaz" class="zakaz zakaz_tovar">
+                                        Заказать
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tovar_tovar">
+                                <div class="title_tovar_vdrorge">
+                                    <span>Фитнес-браслет</span>  <span>Xiaomi Mi Band 2</span>
+                                </div>
+                                <div class="wrap_select">
+                                    <select name="" id="tovar2_2" size="1">
+                                        <option data-path="img/pay2.png" value="1799">Черный</option>
+                                        <option data-path="img/pay3.png" value="1899">Белый</option>
+                                        <option data-path="img/pay1.png" value="1999">Серебряный</option>
+                                        <option data-path="img/pay4.png" value="2000">Серый</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_img_tovar tovar2_2">
+                                    <img src="img/pay2.png" alt="">
+                                </div>
+                                <div class="price_tovar_vdoroge" id="tov1_2">
+                                    1799 <span>&#8381;</span>
+                                </div>
+                                <a href="#" class="cart-buy-button" data-name="Фитнес-браслет Xiaomi Mi Band 2" data-price="1799" data-quantity="1">
+                                    <div class="zakaz icon_basket_tovar">
+                                        <img src="img/basket_down.svg" alt="">
+                                        <img src="img/hover_basket_tovar.svg" alt="">
+                                    </div>
+                                    <div href="#form_zakaz" class="zakaz zakaz_tovar">
+                                        Заказать
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tovar_tovar">
+                                <div class="title_tovar_vdrorge">
+                                    <span>Экшн-камера</span><span>Yi Basic Edition</span>
+                                </div>
+                                <div class="wrap_select">
+                                    <select name="" id="tovar2_3" size="1">
+                                        <option data-path="img/pay3.png" value="4999">Белый</option>
+                                        <option data-path="img/pay1.png" value="5000">Серебряный</option>
+                                        <option data-path="img/pay2.png" value="5100">Серый</option>
+                                        <option data-path="img/pay4.png" value="5200">Черный</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_img_tovar tovar2_3">
+                                    <img src="img/pay3.png" alt="">
+                                </div>
+                                <div class="price_tovar_vdoroge" id="tov1_3">
+                                    4999 <span>&#8381;</span>
+                                </div>
+                                <a href="#" class="cart-buy-button" data-name="Экшн-камера Yi Basic Edition" data-price="4999" data-quantity="1">
+                                    <div class="zakaz icon_basket_tovar">
+                                        <img src="img/basket_down.svg" alt="">
+                                        <img src="img/hover_basket_tovar.svg" alt="">
+                                    </div>
+                                    <div href="#form_zakaz" class="zakaz zakaz_tovar">
+                                        Заказать
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tovar_tovar">
+                                <div class="title_tovar_vdrorge">
+                                    <span>Монопод для смартфонов</span><span>Selfie Stick</span>
+                                </div>
+                                <div class="wrap_select">
+                                    <select name="" id="tovar2_4" size="1">
+                                        <option data-path="img/pay4.png" value="599">Серый</option>
+                                        <option data-path="img/pay1.png" value="699">Серебряный</option>
+                                        <option data-path="img/pay2.png" value="799">Белый</option>
+                                        <option data-path="img/pay3.png" value="899">Черный</option>
+                                    </select>
+                                </div>
+                                <div class="wrap_img_tovar tovar2_4">
+                                    <img src="img/pay4.png" alt="">
+                                </div>
+                                <div class="price_tovar_vdoroge" id="tov1_4">
+                                    599 <span>&#8381;</span>
+                                </div>
+                                <a href="#" class="cart-buy-button" data-name="Монопод для смартфонов Selfie Stick" data-price="599" data-quantity="1">
+                                    <div class="zakaz icon_basket_tovar">
+                                        <img src="img/basket_down.svg" alt="">
+                                        <img src="img/hover_basket_tovar.svg" alt="">
+                                    </div>
+                                    <div href="#form_zakaz" class="zakaz zakaz_tovar">
+                                        Заказать
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap_sposob dont_find" id="s10">
+        <div class="title_block wow fadeInRight" data-wow-offset='100'>
+            Не нашли что искали?
+        </div>
+        <div class="description_dont_find wow zoomIn" data-wow-offset='100'>
+            <span>Мы являемся официальным поставщиком Xiaomi в России.</span>
+            <span>Основной ассортимент постоянно в наличии на складе!</span>
+            <span>Доставка по всей России.</span>
+        </div>
+        <a class="all_catalog wow zoomIn" data-wow-offset='100' href="#form_catalog">Посмотреть весь каталог</a>
+        <a class="zapros_opt wow zoomIn" href="#form_catalog_checked">Запросить оптовый прайс-лист</a> 
+    </div>
+    <div class="wrap_contact" id="s11">
+        <div class="title_block">
+            Контактная информация
+        </div>
+        <div class="wrap_contacts">
+            <div class="contact wow fadeInDown" data-wow-offset='50' data-wow-delay="0.3s">
+                <div class="wrap_img_contact">
+                    <img src="img/place.svg" alt="">
+                </div>
+                <div class="text_contact">г.Москва, Рязанский проспект, д. 22, к. 2, эт. 3, офис 316</div>
+            </div>
+            <div class="contact wow fadeInDown" data-wow-delay="0.5s">
+                <div class="wrap_img_contact">
+                    <img src="img/phone.svg" alt="">
+                </div>
+                <div class="text_contact">+7 (499) 110-13-51. <a href="#form_phone" class="popup_phone_bottom">(Заказать обратный звонок)</a>
+                </div>
+            </div>
+            <div class="contact wow fadeInDown" data-wow-delay="0.7s">
+                <div class="wrap_img_contact">
+                    <img src="img/orange_clock.svg" alt="">
+                </div>
+                <div class="text_contact">Понедельник - Суббота: с 10:00 - 18:00
+                    <p>Воскресенье: Выходной</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.1465678929258!2d37.76895231567114!3d55.72120498054493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab5713e4bfc4f%3A0x562ad63bab1d9bf!2z0KDRj9C30LDQvdGB0LrQuNC5INC_0YAuLCAyMtC6Miwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwOTQyOA!5e0!3m2!1sru!2sua!4v1491985247063" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <script src="js/jquery.malihu.PageScroll2id.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.form.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+  cartjs.initialize({
+    emailOrdersTo  : 'nikesbsale@gmail.com', // Ваша почта
+    language       : 'russian',                 // Язык
+    currency       : 'руб',                    // валюта
+
+    requireName    : true,      // Спрашивать имя покупателя.
+    requirePhone   : true,      // Спрашивать телефон покупателя.
+    requireEmail   : true,     // Спрашивать почту покупателя.
+    requireAddress : false,     // Спрашивать адрес покупателя.
+  })
+</script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
